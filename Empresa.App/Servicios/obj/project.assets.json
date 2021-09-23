@@ -198,11 +198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\empresa.app\\Servicios\\Servicios.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Servicios\\Servicios.csproj",
       "projectName": "Servicios",
-      "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\empresa.app\\Servicios\\Servicios.csproj",
+      "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Servicios\\Servicios.csproj",
       "packagesPath": "C:\\Users\\Lenovo X240\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\empresa.app\\Servicios\\obj\\",
+      "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Servicios\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo X240\\AppData\\Roaming\\NuGet\\NuGet.Config"
