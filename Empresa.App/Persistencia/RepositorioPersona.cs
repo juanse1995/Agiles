@@ -44,6 +44,8 @@ namespace Persistencia
             if (personaEncontrada != null)
             {
                 personaEncontrada.Nombre = persona.Nombre;
+                personaEncontrada.Apellidos = persona.Apellidos;
+                personaEncontrada.Documento = persona.Documento;
                 personaEncontrada.FechaNacimiento = persona.FechaNacimiento;
                 _appContext.SaveChanges();
             }
