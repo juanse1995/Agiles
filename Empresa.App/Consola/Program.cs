@@ -63,9 +63,9 @@ namespace Consola
 
             var persona = new Persona
             {
-                Id = 4,
-                Nombre = "Juan Editado",
-                FechaNacimiento = new DateTime(1995, 05, 12)
+                Id = 8,
+                Nombre = "Lala Rodriguez",
+                FechaNacimiento = new DateTime(2009, 10, 03)
             };
 
             _repositorioPersona.UpdatePersona(persona);
@@ -77,7 +77,7 @@ namespace Consola
         {
             Console.WriteLine(" -- Se eliminará una 'Persona' en la BD 'Empresa' TB 'Personas'. -- ");
 
-            _repositorioPersona.DeletePersona(5); //se registra en el () el Id de la persona
+            _repositorioPersona.DeletePersona(7); //se registra en el () el Id de la persona
 
             Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }
@@ -135,7 +135,7 @@ namespace Consola
             var cliente = new Cliente
             {
                 Nombre = "Lala Rodriguez",
-                FechaNacimiento = new DateTime(1995, 05, 12),
+                FechaNacimiento = new DateTime(2009, 10, 03),       
                 Telefono = "310000000"
             };
 
@@ -148,7 +148,7 @@ namespace Consola
         {
             Console.WriteLine(" -- Se relacionará un 'Cliente' con una 'Empresa'. -- ");
 
-            var cliente = _repositorioCliente.EsCliente(6, 1); //Id del cliente + Id Empresa
+            var cliente = _repositorioCliente.EsCliente(8, 2); //Id del cliente + Id Empresa
 
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
             Console.WriteLine(cliente.Nombre + " Es cliente de empresa 1");
@@ -160,13 +160,14 @@ namespace Consola
         private static void UpdateCliente()
         {
             
-            Console.WriteLine(" -- Se actualizará un 'Cliente' en la BD 'Empresa' TB 'Empresas'. -- ");
+            Console.WriteLine(" -- Se actualizará un 'Cliente' en la BD 'Empresa' TB 'Personas'. -- ");
 
             var cliente = new Cliente
             
             {
-                Id = 7,
-                Telefono = "32000000"
+                Id = 8,
+                Telefono = "33333",
+                
             };
 
             _repositorioCliente.UpdateCliente(cliente);
