@@ -48,7 +48,7 @@ namespace Consola
             var persona = new Persona
             {
                 Nombre = "Juan Urdaneta",
-                FechaNacimiento = new DateTime(1995, 05, 12)
+                FechaNacimiento = new DateTime(1995, 05, 12),
             };
 
             _repositorioPersona.AddPersona(persona);
