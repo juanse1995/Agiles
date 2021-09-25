@@ -7,6 +7,7 @@ namespace Consola
     class Program
     {
         private static I_RepositorioPersona _repositorioPersona = new RepositorioPersona(new Persistencia.AppContext());
+        private static I_RepositorioEmpresa _repositorioEmpresa = new RepositorioEmpresa(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine(" ------ Bienvenido ----- ");
@@ -14,6 +15,8 @@ namespace Consola
             //UpdatePersona();
             //DeletePersona();
             //GetPersona();
+
+            AddEmpresa();
         }
 
         //Metodo para crear la Persona
@@ -56,6 +59,20 @@ namespace Consola
             _repositorioPersona.DeletePersona(4); //se registra en el () el Id de la persona
 
             Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
+        }
+
+        private static void AddEmpresa()
+        {
+            Console.WriteLine(" -- Se añadirá una 'Empresa' en la BD 'Empresa' TB 'Personas'. -- ");
+
+            var empresa = new Empresa
+            {
+                Nombre = "EMPRESA SAS",
+                CIF = "AAS2Prueba"
+            };
+
+            _repositorioEmpresa.AddEmpresa(empresa);
+            Console.WriteLine("-- Se ha añadido correctamente, por favor verifique la BD. -- ");
         }
         
     }
