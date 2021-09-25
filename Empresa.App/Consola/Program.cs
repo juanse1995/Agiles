@@ -29,7 +29,7 @@ namespace Consola
 
             //CRUD para "Cliente"
             //AddCliente();
-            EsCliente();
+            //EsCliente();
 
             //CRUD para "Empleado"
 
