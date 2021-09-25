@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Data.Common;
+using System;
 using Dominio;
 using Persistencia;
 
@@ -30,6 +31,7 @@ namespace Consola
             //CRUD para "Cliente"
             //AddCliente();
             //EsCliente();
+            UpdateCliente();
 
             //CRUD para "Empleado"
 
@@ -75,7 +77,7 @@ namespace Consola
         {
             Console.WriteLine(" -- Se eliminará una 'Persona' en la BD 'Empresa' TB 'Personas'. -- ");
 
-            _repositorioPersona.DeletePersona(4); //se registra en el () el Id de la persona
+            _repositorioPersona.DeletePersona(5); //se registra en el () el Id de la persona
 
             Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }
@@ -132,17 +134,43 @@ namespace Consola
 
             var cliente = new Cliente
             {
-                Telefono = "3101234567",
+                Nombre = "Lala Rodriguez",
+                FechaNacimiento = new DateTime(1995, 05, 12),
+                Telefono = "310000000"
             };
 
             _repositorioCliente.AddCliente(cliente);
             Console.WriteLine("-- Se ha añadido correctamente, por favor verifique la BD. -- ");
         }
 
+        //Metodo para relacionar el Cliente con la Empresa
         private static void EsCliente()
         {
-            var cliente = _repositorioCliente.EsCliente(5, 1);;
-            Console.WriteLine(cliente.Nombre + " " + cliente.FechaNacimiento);
+            Console.WriteLine(" -- Se relacionará un 'Cliente' con una 'Empresa'. -- ");
+
+            var cliente = _repositorioCliente.EsCliente(6, 1); //Id del cliente + Id Empresa
+
+            Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
+            Console.WriteLine(cliente.Nombre + " Es cliente de empresa 1");
+        }
+
+        //Metodo para actualizar el Cliente
+
+
+        private static void UpdateCliente()
+        {
+            
+            Console.WriteLine(" -- Se actualizará un 'Cliente' en la BD 'Empresa' TB 'Empresas'. -- ");
+
+            var cliente = new Cliente
+            
+            {
+                Id = 7,
+                Telefono = "32000000"
+            };
+
+            _repositorioCliente.UpdateCliente(cliente);
+            Console.WriteLine("-- Se ha actualizado correctamente, por favor verifique la BD. -- ");                    
         }
 
     }
