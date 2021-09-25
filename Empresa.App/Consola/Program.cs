@@ -8,16 +8,30 @@ namespace Consola
     {
         private static I_RepositorioPersona _repositorioPersona = new RepositorioPersona(new Persistencia.AppContext());
         private static I_RepositorioEmpresa _repositorioEmpresa = new RepositorioEmpresa(new Persistencia.AppContext());
+        private static I_RepositorioCliente _repositorioCliente = new RepositorioCliente(new Persistencia.AppContext());
+        private static I_RepositorioEmpleado _repositorioEmpleado = new RepositorioEmpleado(new Persistencia.AppContext());
+        private static I_RepositorioDirectivo _RepositorioDirectivo = new RepositorioDirectivo(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine(" ------ Bienvenido ----- ");
+            
+            //CRUD para "Persona"
             //AddPersona();
             //UpdatePersona();
             //DeletePersona();
             //GetPersona();
 
+            //CRUD para "Empresa"
             AddEmpresa();
+
+            //CRUD para "Cliente"
+
+            //CRUD para "Empleado"
+
+            //CRUD para "Directivo"
         }
+
+//CRUD para "Persona"
 
         //Metodo para crear la Persona
         private static void AddPersona()
@@ -61,14 +75,17 @@ namespace Consola
             Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }
 
+//CRUD para "Empresa"
+
+        //Metodo para crear la Empresa
         private static void AddEmpresa()
         {
             Console.WriteLine(" -- Se añadirá una 'Empresa' en la BD 'Empresa' TB 'Personas'. -- ");
 
             var empresa = new Empresa
             {
-                Nombre = "EMPRESA SAS",
-                CIF = "AAS2Prueba"
+                Nombre = "Nany SAS",
+                CIF = "AAS2Prueba2"
             };
 
             _repositorioEmpresa.AddEmpresa(empresa);
