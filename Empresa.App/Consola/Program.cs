@@ -1,4 +1,5 @@
-﻿using System.Reflection.Metadata;
+﻿using System.Net.Http;
+using System.Reflection.Metadata;
 using System.Data.Common;
 using System;
 using Dominio;
@@ -32,7 +33,7 @@ namespace Consola
             //CRUD para "Cliente"
             //AddCliente();
             //EsCliente();
-            //UpdateCliente();
+            UpdateCliente();
 
             //CRUD para "Empleado"
 
@@ -128,7 +129,7 @@ namespace Consola
 
             Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }
-/*
+
         //CRUD para "Cliente"
 
         //Metodo para crear el Cliente
@@ -137,11 +138,9 @@ namespace Consola
             Console.WriteLine(" -- Se añadirá un 'Cliente' en la BD 'Empresa' TB 'Personas'. -- ");
 
             var cliente = new Cliente
-            {
-                Nombre = "Lala Rodriguez",
-                FechaNacimiento = new DateTime(2009, 10, 03),       
-                Telefono = "310000000"
-            };
+            {     
+                Telefono = "310000000"   
+            };           
 
             _repositorioCliente.AddCliente(cliente);
             Console.WriteLine("-- Se ha añadido correctamente, por favor verifique la BD. -- ");
@@ -152,10 +151,11 @@ namespace Consola
         {
             Console.WriteLine(" -- Se relacionará un 'Cliente' con una 'Empresa'. -- ");
 
-            var cliente = _repositorioCliente.EsCliente(8, 2); //Id del cliente + Id Empresa
+            var cliente = _repositorioCliente.EsCliente(1, 1); //Id del cliente + Id Empresa
+            
 
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
-            Console.WriteLine(cliente.Nombre + " Es cliente de empresa 1");
+            Console.WriteLine(cliente.EsCliente + " Es cliente de empresa 1");
         }
 
         //Metodo para actualizar el Cliente
@@ -169,15 +169,14 @@ namespace Consola
             var cliente = new Cliente
             
             {
-                Id = 8,
-                Telefono = "33333",
-                
+                Id = 1,
+                Telefono = "3123456"                
             };
 
             _repositorioCliente.UpdateCliente(cliente);
             Console.WriteLine("-- Se ha actualizado correctamente, por favor verifique la BD. -- ");                    
         }
-*/
+
     }
     
 }
