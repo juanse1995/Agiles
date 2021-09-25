@@ -23,7 +23,9 @@ namespace Consola
 
             //CRUD para "Empresa"
             //AddEmpresa();
-            UpdateEmpresa();
+            //UpdateEmpresa();
+            //DeleteEmpresa();
+            //GetEmpresa();
 
             //CRUD para "Cliente"
 
@@ -85,8 +87,8 @@ namespace Consola
 
             var empresa = new Empresa
             {
-                Nombre = "Nany SAS",
-                CIF = "AAS2Prueba2"
+                Nombre = "Anonimo",
+                CIF = "AAS2Prueba3"
             };
 
             _repositorioEmpresa.AddEmpresa(empresa);
@@ -107,6 +109,16 @@ namespace Consola
             
             _repositorioEmpresa.UpdateEmpresa(empresa);
             Console.WriteLine("-- Se ha actualizado correctamente, por favor verifique la BD. -- ");
+        }
+
+        //Metodo para eliminar una Empresa
+        private static void DeleteEmpresa()
+        {
+            Console.WriteLine(" -- Se eliminará una 'Empresa' en la BD 'Empresa' TB 'Empresas'. -- ");
+                       
+            _repositorioEmpresa.DeleteEmpresa(3); //se registra en el () el Id de la Empresa
+
+            Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }
         
     }
