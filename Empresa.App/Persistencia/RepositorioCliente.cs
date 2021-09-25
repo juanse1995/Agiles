@@ -63,8 +63,7 @@ namespace Persistencia
             if (ClienteEncontrado == null)
             {
                 ClienteEncontrado.Telefono = cliente.Telefono;
-                ClienteEncontrado.EsCliente = cliente.EsCliente;
-                
+                ClienteEncontrado.EsCliente = cliente.EsCliente;                
                 _appContext.SaveChanges();
             }               
             return ClienteEncontrado;
