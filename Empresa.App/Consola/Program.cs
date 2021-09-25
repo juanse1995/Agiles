@@ -22,7 +22,8 @@ namespace Consola
             //GetPersona();
 
             //CRUD para "Empresa"
-            AddEmpresa();
+            //AddEmpresa();
+            UpdateEmpresa();
 
             //CRUD para "Cliente"
 
@@ -80,7 +81,7 @@ namespace Consola
         //Metodo para crear la Empresa
         private static void AddEmpresa()
         {
-            Console.WriteLine(" -- Se añadirá una 'Empresa' en la BD 'Empresa' TB 'Personas'. -- ");
+            Console.WriteLine(" -- Se añadirá una 'Empresa' en la BD 'Empresa' TB 'Empresas'. -- ");
 
             var empresa = new Empresa
             {
@@ -90,6 +91,22 @@ namespace Consola
 
             _repositorioEmpresa.AddEmpresa(empresa);
             Console.WriteLine("-- Se ha añadido correctamente, por favor verifique la BD. -- ");
+        }
+
+        //Metodo para actualizar la Empresa
+        private static void UpdateEmpresa()
+        {
+            Console.WriteLine(" -- Se actualizará una 'Empresa' en la BD 'Empresa' TB 'Empresas'. -- ");
+
+            var empresa = new Empresa
+            {
+                Id = 1,
+                Nombre = "Lala SAS",
+                CIF = "AAS2Prueba1"
+            };
+            
+            _repositorioEmpresa.UpdateEmpresa(empresa);
+            Console.WriteLine("-- Se ha actualizado correctamente, por favor verifique la BD. -- ");
         }
         
     }
