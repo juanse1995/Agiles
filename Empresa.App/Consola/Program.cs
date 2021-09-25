@@ -37,8 +37,7 @@ namespace Consola
 
             //CRUD para "Directivo"
         }
-
-        //CRUD para "Persona"
+/*//CRUD para "Persona"
 
         //Metodo para crear la Persona
         private static void AddPersona()
@@ -173,6 +172,7 @@ namespace Consola
             _repositorioCliente.UpdateCliente(cliente);
             Console.WriteLine("-- Se ha actualizado correctamente, por favor verifique la BD. -- ");                    
         }
-
+*/
     }
+    
 }

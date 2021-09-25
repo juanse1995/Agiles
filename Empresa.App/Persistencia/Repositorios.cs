@@ -19,7 +19,7 @@ namespace Persistencia
             if (!optionBuilder.IsConfigured)
             {
                 optionBuilder
-                .UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = Empresa");
+                .UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EmpresaWEB");
             }
         }
     }
