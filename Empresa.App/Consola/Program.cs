@@ -1,4 +1,5 @@
-﻿using System.Data.Common;
+﻿using System.Reflection.Metadata;
+using System.Data.Common;
 using System;
 using Dominio;
 using Persistencia;
@@ -37,7 +38,7 @@ namespace Consola
 
             //CRUD para "Directivo"
         }
-/*//CRUD para "Persona"
+//CRUD para "Persona"
 
         //Metodo para crear la Persona
         private static void AddPersona()
@@ -46,8 +47,10 @@ namespace Consola
 
             var persona = new Persona
             {
-                Nombre = "Juan Urdaneta",
-                FechaNacimiento = new DateTime(1995, 05, 12),
+                Nombre = "Juan",
+                Apellidos = "Urdaneta",
+                Documento = "ABC123",
+                FechaNacimiento = new DateTime(1995, 05, 12)
             };
 
             _repositorioPersona.AddPersona(persona);
@@ -62,9 +65,11 @@ namespace Consola
 
             var persona = new Persona
             {
-                Id = 8,
-                Nombre = "Lala Rodriguez",
-                FechaNacimiento = new DateTime(2009, 10, 03)
+                Id = 1,
+                Nombre = "Juan Esteban",
+                Apellidos = "Urdaneta",
+                Documento = "1234",
+                FechaNacimiento = new DateTime(1995, 05, 12)
             };
 
             _repositorioPersona.UpdatePersona(persona);
@@ -76,7 +81,7 @@ namespace Consola
         {
             Console.WriteLine(" -- Se eliminará una 'Persona' en la BD 'Empresa' TB 'Personas'. -- ");
 
-            _repositorioPersona.DeletePersona(7); //se registra en el () el Id de la persona
+            _repositorioPersona.DeletePersona(1); //se registra en el () el Id de la persona
 
             Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }
@@ -119,11 +124,11 @@ namespace Consola
         {
             Console.WriteLine(" -- Se eliminará una 'Empresa' en la BD 'Empresa' TB 'Empresas'. -- ");
 
-            _repositorioEmpresa.DeleteEmpresa(3); //se registra en el () el Id de la Empresa
+            _repositorioEmpresa.DeleteEmpresa(1); //se registra en el () el Id de la Empresa
 
             Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }
-
+/*
         //CRUD para "Cliente"
 
         //Metodo para crear el Cliente

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DQuhsq3kCZz4U0/jBMa+pHB1XjaXcvDBqq9ymR4K49zJfCZOCiMIrzXsSc2YYhFti+xhfg0CRYc1tlUfSVz94w==",
+  "dgSpecHash": "/gSHNmUxBWQ6TfN7iBZQb7j3BFlnfj07RKuccQgQfKQr5p2vlGNzCKoTlpv6eUsDXPASrh0x1/DUeLLqpzviMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Consola\\Consola.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\consola\\Consola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo X240\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lenovo X240\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
