@@ -31,7 +31,7 @@ namespace Consola
             //CRUD para "Cliente"
             //AddCliente();
             //EsCliente();
-            UpdateCliente();
+            //UpdateCliente();
 
             //CRUD para "Empleado"
 
