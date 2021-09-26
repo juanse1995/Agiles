@@ -260,7 +260,7 @@ namespace Consola
 
             var directivo = new Directivo
             {
-                Categoria = 2,                
+                Categoria = 2,
             };
 
             _RepositorioDirectivo.AddDirectivo(directivo);
