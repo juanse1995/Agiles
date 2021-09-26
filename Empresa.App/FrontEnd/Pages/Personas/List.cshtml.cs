@@ -11,8 +11,11 @@ namespace Frontend.Pages
 {
     public class ListModelPersonas : PageModel
     {
+
+        
         public void OnGet()
         {
+           
         }
     }
 }
