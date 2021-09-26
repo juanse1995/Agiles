@@ -34,12 +34,13 @@ namespace Consola
             //AddCliente();
             //EsCliente();
             UpdateCliente();
+            //DeleteCliente();
 
             //CRUD para "Empleado"
 
             //CRUD para "Directivo"
         }
-//CRUD para "Persona"
+        //CRUD para "Persona"
 
         //Metodo para crear la Persona
         private static void AddPersona()
@@ -135,12 +136,12 @@ namespace Consola
         //Metodo para crear el Cliente
         private static void AddCliente()
         {
-            Console.WriteLine(" -- Se añadirá un 'Cliente' en la BD 'Empresa' TB 'Personas'. -- ");
+            Console.WriteLine(" -- Se añadirá un 'Cliente' en la BD 'Empresa' TB 'Clientes'. -- ");
 
             var cliente = new Cliente
-            {     
-                Telefono = "310000000"   
-            };           
+            {
+                Telefono = "310000000"
+            };
 
             _repositorioCliente.AddCliente(cliente);
             Console.WriteLine("-- Se ha añadido correctamente, por favor verifique la BD. -- ");
@@ -151,32 +152,41 @@ namespace Consola
         {
             Console.WriteLine(" -- Se relacionará un 'Cliente' con una 'Empresa'. -- ");
 
-            var cliente = _repositorioCliente.EsCliente(1, 1); //Id del cliente + Id Empresa
-            
+            var cliente = _repositorioCliente.EsCliente(2, 1); //Id del cliente + Id Empresa
+
 
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
-            Console.WriteLine(cliente.EsCliente + " Es cliente de empresa 1");
+            Console.WriteLine(cliente.EsCliente + " Está relacionado con la empresa");
         }
 
+
         //Metodo para actualizar el Cliente
-
-
         private static void UpdateCliente()
         {
-            
+
             Console.WriteLine(" -- Se actualizará un 'Cliente' en la BD 'Empresa' TB 'Personas'. -- ");
 
             var cliente = new Cliente
-            
+
             {
-                Id = 1,
-                Telefono = "3123456"                
+                Id = 2,
+                Telefono = "3123456",
             };
 
             _repositorioCliente.UpdateCliente(cliente);
-            Console.WriteLine("-- Se ha actualizado correctamente, por favor verifique la BD. -- ");                    
+            Console.WriteLine("-- Se ha actualizado correctamente, por favor verifique la BD. -- ");
+        }
+
+        //Metodo para eliminar un Cliente
+        private static void DeleteCliente()
+        {
+            Console.WriteLine(" -- Se eliminará un 'Cliente' en la BD 'Empresa' TB 'Clientes'. -- ");
+
+            _repositorioCliente.DeleteCliente(1); //se registra en el () el Id de la Empresa
+
+            Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }
 
     }
-    
+
 }

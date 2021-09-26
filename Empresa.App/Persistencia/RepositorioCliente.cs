@@ -1,6 +1,8 @@
+using System.Data.Common;
 using System.Collections.Generic;
 using System.Linq;
 using Dominio;
+using Persistencia;
 
 //Falta llevar al Main()
 
@@ -60,7 +62,7 @@ namespace Persistencia
         Cliente I_RepositorioCliente.UpdateCliente(Cliente cliente)
         {
             var ClienteEncontrado = _appContext.Clientes.FirstOrDefault(cli => cli.Id == cliente.Id);
-            if (ClienteEncontrado == null)
+            if (ClienteEncontrado != null)
             {
                 ClienteEncontrado.Telefono = cliente.Telefono;
                 ClienteEncontrado.EsCliente = cliente.EsCliente;                
