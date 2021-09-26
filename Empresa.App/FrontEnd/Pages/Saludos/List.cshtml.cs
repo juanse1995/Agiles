@@ -22,7 +22,7 @@ namespace Frontend.Pages
             this.repositorioSaludos = repositorioSaludos;
         }
 
-        private readonly I_RepositorioPersona repositorioPersona;
+        //private readonly I_RepositorioPersona repositorioPersona;
         //private readonly I_RepositorioEmpresa repositorioEmpresa;
         //private readonly I_RepositorioCliente repositorioCliente;
         //private readonly I_RepositorioEmpleado repositorioEmpleado;
