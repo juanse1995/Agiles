@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Frontend.csproj": {}
+    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\Frontend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Frontend.csproj": {
+    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\Frontend.csproj",
         "projectName": "Frontend",
-        "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Frontend.csproj",
+        "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\Frontend.csproj",
         "packagesPath": "C:\\Users\\Lenovo X240\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo X240\\AppData\\Roaming\\NuGet\\NuGet.Config"
