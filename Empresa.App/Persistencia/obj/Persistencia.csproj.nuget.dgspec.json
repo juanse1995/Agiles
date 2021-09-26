@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\persistencia\\Persistencia.csproj": {}
+    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj": {}
   },
   "projects": {
     "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj": {
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\persistencia\\Persistencia.csproj": {
+    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\persistencia\\Persistencia.csproj",
+        "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\Lenovo X240\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\persistencia\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo X240\\AppData\\Roaming\\NuGet\\NuGet.Config"
