@@ -29,6 +29,5 @@ namespace Frontend.Pages
             else
                 return Page();
         }
-
     }
 }
