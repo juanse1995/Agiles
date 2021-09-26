@@ -39,10 +39,15 @@ namespace Consola
             //CRUD para "Empleado"
             //AddEmpleado();
             //TrabajaEn();
-            UpdateEmpleado();
+            //UpdateEmpleado();
             //DeleteEmpleado();
 
             //CRUD para "Directivo"
+            //AddDirectivo();
+            //Subordinado();
+            //Dirige();
+            //UpdateDirectivo();
+            //DeleteDirectivo();
         }
         //CRUD para "Persona"
 
@@ -242,6 +247,72 @@ namespace Consola
             Console.WriteLine(" -- Se eliminará un 'Empleado' en la BD 'Empresa' TB 'Empleados'. -- ");
 
             _repositorioEmpleado.DeleteEmpleado(1); //se registra en el () el Id de la Empresa
+
+            Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
+        }
+
+        //CRUD para "Directivo"
+
+        //Metodo para crear el Directivo
+        private static void AddDirectivo()
+        {
+            Console.WriteLine(" -- Se añadirá un 'Directivo' en la BD 'Empresa' TB 'Directivos'. -- ");
+
+            var directivo = new Directivo
+            {
+                Categoria = 2,                
+            };
+
+            _RepositorioDirectivo.AddDirectivo(directivo);
+            Console.WriteLine("-- Se ha añadido correctamente, por favor verifique la BD. -- ");
+        }
+
+        //Metodo para relacionar el Directivo con el Empleado que dirige
+        private static void Subordinado()
+        {
+            Console.WriteLine(" -- Se relacionará un 'Directivo' con un 'Empleado'. -- ");
+
+            var directivo = _RepositorioDirectivo.Subordinado(1, 2); //Id del Directivo + Id Empleado subordinado
+
+            Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
+            Console.WriteLine("El Directivo con categoria " + directivo.Categoria + " su subordinado es" + directivo.Subordinado);
+        }
+
+        //Metodo para relacionar el Directivo con la Empresa que dirige
+        private static void Dirige()
+        {
+            Console.WriteLine(" -- Se relacionará un 'Directivo' con uns 'Empresa'. -- ");
+
+            var directivo = _RepositorioDirectivo.Dirige(1, 1); //Id del Directivo + Id Empleado subordinado
+
+            Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
+            Console.WriteLine("El Directivo con categoria " + directivo.Categoria + " su empresa es" + directivo.Dirige);
+        }
+
+
+        //Metodo para actualizar el Directivo
+        private static void UpdateDirectivo()
+        {
+
+            Console.WriteLine(" -- Se actualizará un 'Directivo' en la BD 'Empresa' TB 'Directivos'. -- ");
+
+            var directivo = new Directivo
+
+            {
+                Id = 2,
+                Categoria = 3
+            };
+
+            _RepositorioDirectivo.UpdateDirectivo(directivo);
+            Console.WriteLine("-- Se ha actualizado correctamente, por favor verifique la BD. -- ");
+        }
+
+        //Metodo para eliminar un Directivo
+        private static void DeleteDirectivo()
+        {
+            Console.WriteLine(" -- Se eliminará un 'Directivo' en la BD 'Empresa' TB 'Directivos'. -- ");
+
+            _RepositorioDirectivo.DeleteDirectivo(1); //se registra en el () el Id de la Empresa
 
             Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }

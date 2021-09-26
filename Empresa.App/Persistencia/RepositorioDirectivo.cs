@@ -29,6 +29,22 @@ namespace Persistencia
             _appContext.SaveChanges();
         }
 
+        Directivo I_RepositorioDirectivo.Dirige(int IdDirectivo, int IdEmpresa)
+        {
+            var DirectivoEncontrado = _appContext.Directivos.FirstOrDefault(p => p.Id == IdDirectivo);
+            if (DirectivoEncontrado != null)
+            {
+                var empresaEncontrada = _appContext.Empresas.FirstOrDefault(e => e.Id == IdEmpresa);
+                if (empresaEncontrada  != null)
+                {
+                    DirectivoEncontrado.Dirige = empresaEncontrada ;
+                    _appContext.SaveChanges();
+                }
+                return DirectivoEncontrado;
+            }
+            return null;
+        }
+
         IEnumerable<Directivo> I_RepositorioDirectivo.GetAllDirectivo()
         {
             return _appContext.Directivos;
@@ -54,6 +70,8 @@ namespace Persistencia
             }
             return null;
         }
+
+      
 
         Directivo I_RepositorioDirectivo.UpdateDirectivo(Directivo directivo)
         {

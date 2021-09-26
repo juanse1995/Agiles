@@ -11,5 +11,6 @@ namespace Persistencia
         void DeleteDirectivo(int IdDirectivo);
         Directivo GetDirectivo(int IdDirectivo);
         Directivo Subordinado(int IdDirectivo, int IdEmpleado);
+        Directivo Dirige(int IdDirectivo, int IdEmpresa);
     }
 }
