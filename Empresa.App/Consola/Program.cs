@@ -272,7 +272,7 @@ namespace Consola
         {
             Console.WriteLine(" -- Se relacionará un 'Directivo' con un 'Empleado'. -- ");
 
-            var directivo = _RepositorioDirectivo.Subordinado(1, 2); //Id del Directivo + Id Empleado subordinado
+            var directivo = _RepositorioDirectivo.Subordinado(2, 2); //Id del Directivo + Id Empleado subordinado
 
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
             Console.WriteLine("El Directivo con categoria " + directivo.Categoria + " su subordinado es" + directivo.Subordinado);
@@ -281,9 +281,9 @@ namespace Consola
         //Metodo para relacionar el Directivo con la Empresa que dirige
         private static void Dirige()
         {
-            Console.WriteLine(" -- Se relacionará un 'Directivo' con uns 'Empresa'. -- ");
+            Console.WriteLine(" -- Se relacionará un 'Directivo' con una 'Empresa'. -- ");
 
-            var directivo = _RepositorioDirectivo.Dirige(1, 1); //Id del Directivo + Id Empleado subordinado
+            var directivo = _RepositorioDirectivo.Dirige(2, 1); //Id del Directivo + Id Empresa
 
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
             Console.WriteLine("El Directivo con categoria " + directivo.Categoria + " su empresa es" + directivo.Dirige);
@@ -300,7 +300,7 @@ namespace Consola
 
             {
                 Id = 2,
-                Categoria = 3
+                Categoria = 1
             };
 
             _RepositorioDirectivo.UpdateDirectivo(directivo);
