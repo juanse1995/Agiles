@@ -1,4 +1,3 @@
-using System.Net.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Persistencia;
 
-
-
-namespace FrontEnd
+namespace Frontend
 {
     public class Startup
     {
@@ -22,19 +18,12 @@ namespace FrontEnd
             Configuration = configuration;
         }
 
-        public Startup(IConfiguration configuration) 
-        {
-            this.Configuration = configuration;
-               
-        }
-                public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            Services.AddSingleton<I_RepositorioPersona,RepositorioPersona>();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
