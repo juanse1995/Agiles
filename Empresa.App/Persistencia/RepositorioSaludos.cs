@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Dominio;
+using System.Linq;
 
 namespace Persistencia
 {
@@ -19,6 +20,12 @@ namespace Persistencia
         public IEnumerable<Saludo> GetAll()
         {
             return saludos;
+        }
+
+        public Saludo GetSaludoPorId(int saludoId)
+        {
+            return saludos.SingleOrDefault(s => s.Id==saludoId);
+
         }
     }
 }

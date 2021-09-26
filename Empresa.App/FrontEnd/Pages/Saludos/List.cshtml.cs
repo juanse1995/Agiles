@@ -34,5 +34,6 @@ namespace Frontend.Pages
             //ListaSaludos.AddRange(saludos);
             Saludos = repositorioSaludos.GetAll();
         }
+
     }
 }

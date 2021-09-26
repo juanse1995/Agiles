@@ -7,5 +7,6 @@ namespace Persistencia
     public interface I_RepositorioSaludos
     {
          IEnumerable<Saludo> GetAll();
+         Saludo GetSaludoPorId(int saludoId);
     }
 }
