@@ -24,6 +24,12 @@ namespace Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<I_RepositorioSaludos, RepositorioSaludos>();
+            services.AddSingleton<I_RepositorioPersona, RepositorioPersona>();
+            services.AddSingleton<I_RepositorioEmpresa, RepositorioEmpresa>();
+            services.AddSingleton<I_RepositorioCliente, RepositorioCliente>();
+            services.AddSingleton<I_RepositorioEmpleado, RepositorioEmpleado>();
+            services.AddSingleton<I_RepositorioDirectivo, RepositorioDirectivo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
