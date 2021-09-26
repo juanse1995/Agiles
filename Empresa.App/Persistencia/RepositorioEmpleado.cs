@@ -61,7 +61,8 @@ namespace Persistencia
             var empleadoEncontrado = _appContext.Empleados.FirstOrDefault(e => e.Id == empleado.Id);
             if (empleadoEncontrado != null)
             {
-                empleadoEncontrado.SueldoBruto = empleado.SueldoBruto;                
+                empleadoEncontrado.SueldoBruto = empleado.SueldoBruto;
+                empleadoEncontrado.Cargo = empleado.Cargo;                
                 _appContext.SaveChanges();
             }
             return empleadoEncontrado;            

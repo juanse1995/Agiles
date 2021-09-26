@@ -33,10 +33,14 @@ namespace Consola
             //CRUD para "Cliente"
             //AddCliente();
             //EsCliente();
-            UpdateCliente();
+            //UpdateCliente();
             //DeleteCliente();
 
             //CRUD para "Empleado"
+            //AddEmpleado();
+            //TrabajaEn();
+            UpdateEmpleado();
+            //DeleteEmpleado();
 
             //CRUD para "Directivo"
         }
@@ -154,16 +158,14 @@ namespace Consola
 
             var cliente = _repositorioCliente.EsCliente(2, 1); //Id del cliente + Id Empresa
 
-
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
-            Console.WriteLine(cliente.EsCliente + " Está relacionado con la empresa");
+            Console.WriteLine("El cliente con teléfono" + cliente.Telefono + " está relacionado con la empresa" + cliente.Id);
         }
 
 
         //Metodo para actualizar el Cliente
         private static void UpdateCliente()
         {
-
             Console.WriteLine(" -- Se actualizará un 'Cliente' en la BD 'Empresa' TB 'Personas'. -- ");
 
             var cliente = new Cliente
@@ -183,6 +185,63 @@ namespace Consola
             Console.WriteLine(" -- Se eliminará un 'Cliente' en la BD 'Empresa' TB 'Clientes'. -- ");
 
             _repositorioCliente.DeleteCliente(1); //se registra en el () el Id de la Empresa
+
+            Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
+        }
+
+        //CRUD para "Empleado"
+
+        //Metodo para crear el Empleado
+        private static void AddEmpleado()
+        {
+            Console.WriteLine(" -- Se añadirá un 'Empleado' en la BD 'Empresa' TB 'Empleados'. -- ");
+
+            var empleado = new Empleado
+            {
+                SueldoBruto = 3500000,
+                Cargo = "Programador",
+            };
+
+            _repositorioEmpleado.AddEmpleado(empleado);
+            Console.WriteLine("-- Se ha añadido correctamente, por favor verifique la BD. -- ");
+        }
+
+        //Metodo para relacionar el Empleado con la Empresa
+        private static void TrabajaEn()
+        {
+            Console.WriteLine(" -- Se relacionará un 'Empleado' con una 'Empresa'. -- ");
+
+            var empleado = _repositorioEmpleado.TrabajaEn(2, 1); //Id del empleado + Id Empresa
+
+            Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
+            Console.WriteLine("El empleado con ID " + empleado.Id + " Está relacionado con la empresa" + empleado.Nombre);
+        }
+
+
+        //Metodo para actualizar el Empleado
+        private static void UpdateEmpleado()
+        {
+
+            Console.WriteLine(" -- Se actualizará un 'Empleado' en la BD 'Empresa' TB 'Empleados'. -- ");
+
+            var empleado = new Empleado
+
+            {
+                Id = 2,
+                SueldoBruto = 4000000,
+                Cargo = "Programador Senior"
+            };
+
+            _repositorioEmpleado.UpdateEmpleado(empleado);
+            Console.WriteLine("-- Se ha actualizado correctamente, por favor verifique la BD. -- ");
+        }
+
+        //Metodo para eliminar un Empleado
+        private static void DeleteEmpleado()
+        {
+            Console.WriteLine(" -- Se eliminará un 'Empleado' en la BD 'Empresa' TB 'Empleados'. -- ");
+
+            _repositorioEmpleado.DeleteEmpleado(1); //se registra en el () el Id de la Empresa
 
             Console.WriteLine("-- Se ha eliminado correctamente, por favor verifique la BD. -- ");
         }
