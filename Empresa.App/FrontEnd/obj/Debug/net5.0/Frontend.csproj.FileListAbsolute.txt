@@ -38,3 +38,4 @@ C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net
 C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net5.0\Frontend.pdb
 C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net5.0\Frontend.genruntimeconfig.cache
 C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net5.0\Frontend.csproj.CopyComplete
+C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net5.0\Razor\Pages\Saludos\List.cshtml.g.cs
