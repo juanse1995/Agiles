@@ -21,7 +21,7 @@ namespace Consola
             //Hola esta prueba
             //CRUD para "Persona"
             //AddPersona();
-            //BuscarPersona(1);
+            BuscarPersona(3);
 
             //UpdatePersona();
             //DeletePersona();
@@ -70,13 +70,14 @@ namespace Consola
             _repositorioPersona.AddPersona(persona);
             Console.WriteLine("-- Se ha añadido correctamente, por favor verifique la BD. -- ");
         }
-        
+
         //Metodo para buscar persona
         private static void BuscarPersona(int idPersona)
         {
-            var persona = _repositorioPersona.GetPaciente(idPersona);
-            Console.WriteLine(persona.Nombre + " " + persona.Apellidos);
+            Console.WriteLine(" -- Se buscará una 'Persona' en la BD 'Empresa' TB 'Personas'. -- ");
 
+            var persona = _repositorioPersona.GetPersona(idPersona);
+            Console.WriteLine("La persona encontrada con el ID " + persona.Id + " es " + persona.Nombre + " " + persona.Apellidos);
         }
 
 
