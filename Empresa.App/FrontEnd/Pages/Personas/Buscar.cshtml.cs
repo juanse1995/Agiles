@@ -8,11 +8,14 @@ using Dominio;
 using Persistencia;
 
 namespace MyApp.Namespace
-{
+{/*
     public class BuscarModel : PageModel
     {
+        
         public void OnGet()
         {
         }
+        
     }
+    */
 }

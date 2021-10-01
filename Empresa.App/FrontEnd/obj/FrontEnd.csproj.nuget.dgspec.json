@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\FrontEnd.csproj": {}
+    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\ne.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\Lenovo X240\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ne.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Lenovo X240\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,39 +52,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\FrontEnd.csproj": {
+    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\ne.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\Lenovo X240\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ne.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Lenovo X240\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj"
+              "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -140,36 +136,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj",
-        "packagesPath": "C:\\Users\\ne.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\Lenovo X240\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ne.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Lenovo X240\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\ne.rodriguez\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -220,7 +214,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

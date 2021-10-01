@@ -58,10 +58,10 @@ namespace Consola
 
             var persona = new Persona
             {
-                Nombre = "Juan",
-                Apellidos = "Urdaneta",
-                Documento = "ABC123",
-                FechaNacimiento = new DateTime(1995, 05, 12)
+                Nombre = "Mishi",
+                Apellidos = "Fu",
+                Documento = "MIAU123",
+                FechaNacimiento = new DateTime(2021, 09, 01)
             };
 
             _repositorioPersona.AddPersona(persona);
