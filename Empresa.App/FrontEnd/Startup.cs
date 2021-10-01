@@ -29,9 +29,9 @@ namespace Frontend
             services.AddRazorPages();
             
             
-            //services.AddSingleton<I_RepositorioSaludos, RepositorioSaludos>(); 
-            //services.AddTrasient<I_RepositorioPersona, RepositorioPersona>();           
-            services.AddScoped<I_RepositorioPersona, RepositorioPersona>();
+            services.AddSingleton<I_RepositorioSaludos, RepositorioSaludos>(); 
+            services.AddTrasient<I_RepositorioPersona, RepositorioPersona>();           
+            //services.AddScoped<I_RepositorioPersona, RepositorioPersona>();
             //services.AddSingleton<I_RepositorioEmpresa, RepositorioEmpresa>();
             //services.AddSingleton<I_RepositorioCliente, RepositorioCliente>();
             //services.AddSingleton<I_RepositorioEmpleado, RepositorioEmpleado>();
