@@ -88,3 +88,4 @@ C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net
 C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net5.0\Razor\Pages\Personas\Buscar.cshtml.g.cs
 C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net5.0\Razor\Pages\Personas\Crear.cshtml.g.cs
 C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net5.0\Razor\Pages\Personas\Eliminar.cshtml.g.cs
+C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\frontend\obj\Debug\net5.0\Razor\Pages\Saludos\Details.cshtml.g.cs

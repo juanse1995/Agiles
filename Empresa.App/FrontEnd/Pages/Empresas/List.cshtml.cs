@@ -11,8 +11,17 @@ namespace Frontend.Pages
 {
     public class ListModelEmpresas : PageModel
     {
+        private readonly I_RepositorioEmpresa repositorioEmpresa;
+        public IEnumerable<Empresa> Empresas { get; set; }
+
+        public ListModelEmpresas(I_RepositorioEmpresa repositorioEmpresa)
+        {
+            this.repositorioEmpresa = repositorioEmpresa;
+        }
+
         public void OnGet()
         {
+            Empresas = repositorioEmpresa.GetAllEmpresa();
         }
     }
 }

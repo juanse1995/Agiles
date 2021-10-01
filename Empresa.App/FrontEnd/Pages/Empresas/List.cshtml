@@ -1,4 +1,18 @@
 ﻿@page
-@model Frontend.Pages.ListModel
+@model Frontend.Pages.ListModelEmpresas
 @{
 }
+
+<h1>Listado de Empresas</h1>
+
+<table class="table">
+   @foreach (var empresa in Model.Empresas)
+    {
+       <tr>
+           <td>@empresa.Id</td>
+           <td>@empresa.Nombre</td>
+           <td>@empresa.CIF</td>
+
+       </tr> 
+    }
+</table>
