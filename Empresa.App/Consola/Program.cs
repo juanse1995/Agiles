@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System.ComponentModel;
+using System.Net.Http;
 using System.Reflection.Metadata;
 using System.Data.Common;
 using System;
@@ -20,6 +21,8 @@ namespace Consola
             //Hola esta prueba
             //CRUD para "Persona"
             //AddPersona();
+            //BuscarPersona(1);
+
             //UpdatePersona();
             //DeletePersona();
             //GetPersona();
@@ -66,6 +69,14 @@ namespace Consola
 
             _repositorioPersona.AddPersona(persona);
             Console.WriteLine("-- Se ha añadido correctamente, por favor verifique la BD. -- ");
+        }
+        
+        //Metodo para buscar persona
+        private static void BuscarPersona(int idPersona)
+        {
+            var persona = _repositorioPersona.GetPaciente(idPersona);
+            Console.WriteLine(persona.Nombre + " " + persona.Apellidos);
+
         }
 
 
