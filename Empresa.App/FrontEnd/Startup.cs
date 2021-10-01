@@ -27,6 +27,7 @@ namespace Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            
             services.AddSingleton<I_RepositorioSaludos, RepositorioSaludos>();
             //services.AddSingleton<I_RepositorioPersona, RepositorioPersona>();
             //services.AddSingleton<I_RepositorioEmpresa, RepositorioEmpresa>();
