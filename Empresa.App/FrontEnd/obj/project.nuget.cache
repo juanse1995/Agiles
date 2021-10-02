@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Z9erGzPsIPrE0qVSejW9mNQOG2Ay2cDZMhFzKw440pll9bIOBvbkyEHwRJAb8AhFHbu3PX9QOO1rVwDRi8ySQ==",
+  "dgSpecHash": "NALUEDMNUxfGoiNC7VBJJqSE1r0c9Qwqvd5HFBrv2JMKfsSW3xe0w5P9/wZHOjt0ccXsDTkSq1zOuTg6GEJAgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\empresa.app\\frontend\\FrontEnd.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\frontend\\FrontEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo X240\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lenovo X240\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
