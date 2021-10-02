@@ -1,4 +1,4 @@
-
+/*
 //Este código es mi original
 
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +6,7 @@ using Dominio;
 
 namespace Persistencia
 {
-    public class AppContext : DbContext
+    public class ApplicationContext : DbContext
 
     {        
         public DbSet<Persona> Personas { get; set; }
@@ -15,10 +15,9 @@ namespace Persistencia
         public DbSet<Directivo> Directivos { get; set; }
         public DbSet<Empresa> Empresas { get; set; }
 
-        public AppContext() { }
-
-            public AppContext(DbContextOptions<AppContext> options)
-            :base(options)
+        public ApplicationContext() {
+         }
+            public ApplicationContext(DbContextOptions<ApplicationContext> options):base(options)
         {
         }
 
@@ -32,6 +31,7 @@ namespace Persistencia
         }
     }
 }
+*/
 
 /*
 using Microsoft.EntityFrameworkCore;
