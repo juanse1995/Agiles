@@ -1,4 +1,20 @@
 ﻿@page
-@model Frontend.Pages.ListModel
+@model Frontend.Pages.ListModelDirectivos
 @{
 }
+
+<h1>Listado de Directivos</h1>
+
+
+<table class="table">
+   @foreach (var directivo in Model.Directivos)
+    {
+       <tr>
+           <td>@directivo.Id</td>
+           <td>@directivo.Categoria</td>
+           <td>@directivo.Subordinado</td>
+           <td>@directivo.Dirige</td>
+         
+       </tr> 
+    }
+</table>

@@ -33,10 +33,10 @@ namespace Frontend
             services.AddSingleton<I_RepositorioSaludos, RepositorioSaludos>();
 
             services.AddScoped<I_RepositorioPersona, RepositorioPersona>();
-            //services.AddScoped<I_RepositorioEmpresa, RepositorioEmpresa>();
-            //services.AddScoped<I_RepositorioCliente, RepositorioCliente>();
-            //services.AddScoped<I_RepositorioEmpleado, RepositorioEmpleado>();
-            //services.AddScoped<I_RepositorioDirectivo, RepositorioDirectivo>();
+            services.AddScoped<I_RepositorioEmpresa, RepositorioEmpresa>();
+            services.AddScoped<I_RepositorioEmpleado, RepositorioEmpleado>();            
+            services.AddScoped<I_RepositorioCliente, RepositorioCliente>();            
+            services.AddScoped<I_RepositorioDirectivo, RepositorioDirectivo>();
 
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EmpresaWEB"));
         }
