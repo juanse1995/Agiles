@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Dominio;
 using Persistencia;
+using Microsoft.EntityFrameworkCore;
+
 
 
 namespace Frontend
@@ -29,9 +31,11 @@ namespace Frontend
             services.AddRazorPages();            
             
             services.AddSingleton<I_RepositorioSaludos, RepositorioSaludos>(); 
+            services.AddScoped<I_RepositorioPersona, RepositorioPersona>();
+            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //services.AddTransient<I_RepositorioPersona, RepositorioPersona>();           
             //services.AddScoped<I_RepositorioPersona, RepositorioPersona>();
-            //services.AddSingleton<I_RepositorioPersona, RepositorioPersona>();
+            services.AddSingleton<I_RepositorioPersona, RepositorioPersona>();
             //services.AddSingleton<I_RepositorioEmpresa, RepositorioEmpresa>();
             //services.AddSingleton<I_RepositorioCliente, RepositorioCliente>();
             //services.AddSingleton<I_RepositorioEmpleado, RepositorioEmpleado>();

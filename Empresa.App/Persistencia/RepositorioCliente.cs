@@ -11,8 +11,8 @@ namespace Persistencia
     public class RepositorioCliente : I_RepositorioCliente
 
     {
-        private readonly AppContext _appContext;
-        public RepositorioCliente(AppContext appContext)
+        private readonly ApplicationContext  _appContext;
+        public RepositorioCliente(ApplicationContext  appContext)
         {
             _appContext = appContext;
         }

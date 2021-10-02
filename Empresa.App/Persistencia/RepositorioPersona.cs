@@ -6,8 +6,8 @@ namespace Persistencia
 {
     public class RepositorioPersona : I_RepositorioPersona
     {
-        private readonly AppContext _appContext;
-        public RepositorioPersona(AppContext appContext)
+        private readonly ApplicationContext  _appContext;
+        public RepositorioPersona(ApplicationContext appContext)
         {
             _appContext = appContext;
         }

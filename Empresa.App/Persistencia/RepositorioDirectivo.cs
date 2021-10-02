@@ -8,8 +8,8 @@ namespace Persistencia
 {
     public class RepositorioDirectivo : I_RepositorioDirectivo
     {
-        private readonly AppContext _appContext;
-        public RepositorioDirectivo(AppContext appContext)
+        private readonly ApplicationContext _appContext;
+        public RepositorioDirectivo(ApplicationContext  appContext)
         {
             _appContext = appContext;
         }

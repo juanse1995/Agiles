@@ -7,12 +7,20 @@ using Dominio;
 namespace Persistencia
 {
     public class AppContext : DbContext
-    {
+
+    {        
         public DbSet<Persona> Personas { get; set; }
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Directivo> Directivos { get; set; }
         public DbSet<Empresa> Empresas { get; set; }
+
+        public AppContext() { }
+
+            public AppContext(DbContextOptions<AppContext> options)
+            :base(options)
+        {
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
