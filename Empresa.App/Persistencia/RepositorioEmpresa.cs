@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Dominio;
+using Microsoft.EntityFrameworkCore;
+
 
 //Falta llevar al Main()
 
@@ -32,7 +34,7 @@ namespace Persistencia
 
         public IEnumerable<Empresa> GetAllEmpresa()
         {
-            return _appContext.Empresas;
+            return _appContext.Empresas.AsNoTracking();
         }
 
         public Empresa GetEmpresa(int IdEmpresa)

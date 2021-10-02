@@ -8,7 +8,9 @@ namespace Persistencia
 {
     public class ApplicationContext : DbContext
 
-    {        
+    {       
+        private const string connectionString = @"Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = EmpresaWEB"; 
+        
         public DbSet<Persona> Personas { get; set; }
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
@@ -26,7 +28,7 @@ namespace Persistencia
             if (!optionBuilder.IsConfigured)
             {
                 optionBuilder
-                .UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EmpresaWEB");
+                .UseSqlServer(connectionString);
             }
         }
     }

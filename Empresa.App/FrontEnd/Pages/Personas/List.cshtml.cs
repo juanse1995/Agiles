@@ -11,16 +11,16 @@ namespace Frontend.Pages
 {
     public class ListModelPersonas : PageModel
     {
-        private readonly I_RepositorioPersona repositorioPersonas;
+        private readonly I_RepositorioPersona _repo;
         public IEnumerable<Persona> Persona { get; set; }
 
         public ListModelPersonas(I_RepositorioPersona repositorioPersonas)
         {
-            this.repositorioPersonas = repositorioPersonas;
+            _repo = repositorioPersonas;
         }
         public void OnGet()
         {
-            Persona = repositorioPersonas.GetAllPersona();
+            Persona = _repo.GetAllPersona();
         }
     }
 }

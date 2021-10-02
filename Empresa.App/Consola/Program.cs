@@ -10,18 +10,18 @@ namespace Consola
 {
     class Program
     {
-        private static I_RepositorioPersona _repositorioPersona = new RepositorioPersona(new Persistencia.AppContext());
-        private static I_RepositorioEmpresa _repositorioEmpresa = new RepositorioEmpresa(new Persistencia.AppContext());
-        private static I_RepositorioCliente _repositorioCliente = new RepositorioCliente(new Persistencia.AppContext());
-        private static I_RepositorioEmpleado _repositorioEmpleado = new RepositorioEmpleado(new Persistencia.AppContext());
-        private static I_RepositorioDirectivo _RepositorioDirectivo = new RepositorioDirectivo(new Persistencia.AppContext());
+        private static I_RepositorioPersona _repositorioPersona = new RepositorioPersona(new Persistencia.ApplicationContext());
+        private static I_RepositorioEmpresa _repositorioEmpresa = new RepositorioEmpresa(new Persistencia.ApplicationContext());
+        private static I_RepositorioCliente _repositorioCliente = new RepositorioCliente(new Persistencia.ApplicationContext());
+        private static I_RepositorioEmpleado _repositorioEmpleado = new RepositorioEmpleado(new Persistencia.ApplicationContext());
+        private static I_RepositorioDirectivo _RepositorioDirectivo = new RepositorioDirectivo(new Persistencia.ApplicationContext());
         static void Main(string[] args)
         {
             Console.WriteLine(" ------ Bienvenido ----- ");
             //Hola esta prueba
             //CRUD para "Persona"
             //AddPersona();
-            BuscarPersona(3);
+            //BuscarPersona(3);
 
             //UpdatePersona();
             //DeletePersona();
@@ -61,9 +61,9 @@ namespace Consola
 
             var persona = new Persona
             {
-                Nombre = "Mishi",
-                Apellidos = "Fu",
-                Documento = "MIAU123",
+                Nombre = "Polo",
+                Apellidos = "Ro",
+                Documento = "GUAU345",
                 FechaNacimiento = new DateTime(2021, 09, 01)
             };
 

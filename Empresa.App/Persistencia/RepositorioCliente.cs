@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Dominio;
 using Persistencia;
+using Microsoft.EntityFrameworkCore;
+
 
 //Falta llevar al Main()
 
@@ -51,7 +53,7 @@ namespace Persistencia
 
         IEnumerable<Cliente> I_RepositorioCliente.GetAllCliente()
         {
-            return _appContext.Clientes;
+            return _appContext.Clientes.AsNoTracking();
         }
 
         Cliente I_RepositorioCliente.GetCliente(int IdCliente)

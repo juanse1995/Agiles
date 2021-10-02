@@ -28,18 +28,18 @@ namespace Frontend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();            
-            
-            services.AddSingleton<I_RepositorioSaludos, RepositorioSaludos>(); 
+            services.AddRazorPages();
+
+            services.AddSingleton<I_RepositorioSaludos, RepositorioSaludos>();
+
             services.AddScoped<I_RepositorioPersona, RepositorioPersona>();
-            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            //services.AddTransient<I_RepositorioPersona, RepositorioPersona>();           
             //services.AddScoped<I_RepositorioPersona, RepositorioPersona>();
-            //services.AddSingleton<I_RepositorioPersona, RepositorioPersona>();
-            //services.AddSingleton<I_RepositorioEmpresa, RepositorioEmpresa>();
-            //services.AddSingleton<I_RepositorioCliente, RepositorioCliente>();
-            //services.AddSingleton<I_RepositorioEmpleado, RepositorioEmpleado>();
-            //services.AddSingleton<I_RepositorioDirectivo, RepositorioDirectivo>();
+            //services.AddScoped<I_RepositorioEmpresa, RepositorioEmpresa>();
+            //services.AddScoped<I_RepositorioCliente, RepositorioCliente>();
+            //services.AddScoped<I_RepositorioEmpleado, RepositorioEmpleado>();
+            //services.AddScoped<I_RepositorioDirectivo, RepositorioDirectivo>();
+
+            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EmpresaWEB"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

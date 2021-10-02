@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Dominio;
+using Microsoft.EntityFrameworkCore;
+
 
 //Falta llevar al Main()
 
@@ -32,7 +34,7 @@ namespace Persistencia
 
         IEnumerable<Empleado> I_RepositorioEmpleado.GetAllEmpleado()
         {
-            return _appContext.Empleados;
+            return _appContext.Empleados.AsNoTracking();
         }
 
         Empleado I_RepositorioEmpleado.GetEmpleado(int IdEmpleado)

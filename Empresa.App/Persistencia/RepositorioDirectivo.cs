@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Dominio;
+using Microsoft.EntityFrameworkCore;
+
 
 //Falta llevar al Main()
 
@@ -47,7 +49,7 @@ namespace Persistencia
 
         IEnumerable<Directivo> I_RepositorioDirectivo.GetAllDirectivo()
         {
-            return _appContext.Directivos;
+            return _appContext.Directivos.AsNoTracking();
         }
 
         Directivo I_RepositorioDirectivo.GetDirectivo(int IdDirectivo)

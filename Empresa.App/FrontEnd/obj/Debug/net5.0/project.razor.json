@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\FrontEnd.csproj",
+  "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\FrontEnd.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,113 +15619,113 @@
   "RootNamespace": "FrontEnd",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\Buscar.cshtml",
-      "TargetPath": "Pages\\Personas\\Buscar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\List.cshtml",
-      "TargetPath": "Pages\\Empresas\\List.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\Actualizar.cshtml",
-      "TargetPath": "Pages\\Personas\\Actualizar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Saludos\\Details.cshtml",
-      "TargetPath": "Pages\\Saludos\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Shared\\_Layout.cshtml",
-      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Saludos\\List.cshtml",
-      "TargetPath": "Pages\\Saludos\\List.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\Eliminar.cshtml",
-      "TargetPath": "Pages\\Empresas\\Eliminar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Directivos\\List.cshtml",
-      "TargetPath": "Pages\\Directivos\\List.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\Buscar.cshtml",
-      "TargetPath": "Pages\\Empresas\\Buscar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\Crear.cshtml",
-      "TargetPath": "Pages\\Personas\\Crear.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Empleados\\List.cshtml",
-      "TargetPath": "Pages\\Empleados\\List.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\Actualizar.cshtml",
-      "TargetPath": "Pages\\Empresas\\Actualizar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\Crear.cshtml",
-      "TargetPath": "Pages\\Empresas\\Crear.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\List.cshtml",
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\List.cshtml",
       "TargetPath": "Pages\\Personas\\List.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Clientes\\List.cshtml",
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\Crear.cshtml",
+      "TargetPath": "Pages\\Personas\\Crear.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\Eliminar.cshtml",
+      "TargetPath": "Pages\\Empresas\\Eliminar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Shared\\_Layout.cshtml",
+      "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Empleados\\List.cshtml",
+      "TargetPath": "Pages\\Empleados\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\Buscar.cshtml",
+      "TargetPath": "Pages\\Empresas\\Buscar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\Crear.cshtml",
+      "TargetPath": "Pages\\Empresas\\Crear.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Clientes\\List.cshtml",
       "TargetPath": "Pages\\Clientes\\List.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Saludos\\Details.cshtml",
+      "TargetPath": "Pages\\Saludos\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\Actualizar.cshtml",
+      "TargetPath": "Pages\\Empresas\\Actualizar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\Actualizar.cshtml",
+      "TargetPath": "Pages\\Personas\\Actualizar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\Eliminar.cshtml",
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\Buscar.cshtml",
+      "TargetPath": "Pages\\Personas\\Buscar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Personas\\Eliminar.cshtml",
       "TargetPath": "Pages\\Personas\\Eliminar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Empresas\\List.cshtml",
+      "TargetPath": "Pages\\Empresas\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Saludos\\List.cshtml",
+      "TargetPath": "Pages\\Saludos\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Frontend\\Pages\\Directivos\\List.cshtml",
+      "TargetPath": "Pages\\Directivos\\List.cshtml",
       "FileKind": "mvc"
     }
   ],
