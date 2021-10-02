@@ -35,7 +35,7 @@ namespace Frontend
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //services.AddTransient<I_RepositorioPersona, RepositorioPersona>();           
             //services.AddScoped<I_RepositorioPersona, RepositorioPersona>();
-            services.AddSingleton<I_RepositorioPersona, RepositorioPersona>();
+            //services.AddSingleton<I_RepositorioPersona, RepositorioPersona>();
             //services.AddSingleton<I_RepositorioEmpresa, RepositorioEmpresa>();
             //services.AddSingleton<I_RepositorioCliente, RepositorioCliente>();
             //services.AddSingleton<I_RepositorioEmpleado, RepositorioEmpleado>();

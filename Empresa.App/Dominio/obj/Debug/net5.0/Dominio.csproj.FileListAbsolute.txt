@@ -10,3 +10,15 @@ C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\Dominio\obj\Debug\net5
 C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\Dominio\obj\Debug\net5.0\Dominio.dll
 C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\Dominio\obj\Debug\net5.0\ref\Dominio.dll
 C:\Users\Lenovo X240\Downloads\EMPRESA\Agiles\empresa.app\Dominio\obj\Debug\net5.0\Dominio.pdb
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\bin\Debug\net5.0\Dominio.deps.json
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\bin\Debug\net5.0\Dominio.dll
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\bin\Debug\net5.0\ref\Dominio.dll
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\bin\Debug\net5.0\Dominio.pdb
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.csproj.AssemblyReference.cache
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfo.cs
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.dll
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\ref\Dominio.dll
+C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.pdb

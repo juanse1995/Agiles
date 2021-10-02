@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "orOsQcoQEiCspzxwJpiw2wjrF9rin4mGbeEXGYNGu/wlsKdGWWcUGXV/Dr/CAn2kyHDe/8ErLInuJhF/R1Mqiw==",
+  "dgSpecHash": "yQGqHsuQ6+UiHfkMujvloNvRUuO30B8bc+MNpBbvElZv3AY+cuX8ix0oL8LrxnsyfGUkYgGlBObVAk1YzzREng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj",
+  "projectFilePath": "C:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo X240\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Lenovo X240\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
