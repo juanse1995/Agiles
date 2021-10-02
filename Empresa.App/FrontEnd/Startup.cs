@@ -30,7 +30,7 @@ namespace Frontend
             
             
             services.AddSingleton<I_RepositorioSaludos, RepositorioSaludos>(); 
-            services.AddTrasient<I_RepositorioPersona, RepositorioPersona>();           
+            services.AddTransient<I_RepositorioPersona, RepositorioPersona>();           
             //services.AddScoped<I_RepositorioPersona, RepositorioPersona>();
             //services.AddSingleton<I_RepositorioEmpresa, RepositorioEmpresa>();
             //services.AddSingleton<I_RepositorioCliente, RepositorioCliente>();
