@@ -18,7 +18,6 @@ namespace Frontend.Pages
         {
             this.repositorioSaludos = repositorioSaludos;
         }
-
         public void OnGet()
         {           
             Saludos = repositorioSaludos.GetAll();
