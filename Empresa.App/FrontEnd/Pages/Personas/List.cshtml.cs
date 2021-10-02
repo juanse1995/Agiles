@@ -7,8 +7,6 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dominio;
 using Persistencia;
 
-
-
 namespace Frontend.Pages
 {
     public class ListModelPersonas : PageModel

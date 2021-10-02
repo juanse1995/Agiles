@@ -12,7 +12,6 @@ namespace Frontend.Pages
     public class ListModel : PageModel
     {
         private readonly I_RepositorioSaludos repositorioSaludos;
-
         public IEnumerable<Saludo> Saludos {get; set;}
 
         public ListModel(I_RepositorioSaludos repositorioSaludos)
