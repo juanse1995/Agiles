@@ -14,16 +14,14 @@ public class ActualizarModel : PageModel
         private readonly I_RepositorioPersona _repo;
 
         public Persona Persona { get; set;}
-        public Persona Persona_encontrada { get; set;}
 
         public ActualizarModel(I_RepositorioPersona repo){
             _repo = repo;
-
         }
 
         public void OnGet(int IdPersona)
         {
-            Persona_encontrada = _repo.GetPersona(IdPersona);
+            Persona = _repo.GetPersona(IdPersona);
         }
         public void OnPost(Persona persona)
         {
