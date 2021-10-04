@@ -1,4 +1,62 @@
 ﻿@page
-@model MyApp.Namespace.EliminarModel
+@model MyApp.Namespace.Personas.EliminarModel
 @{
+    ViewData["Title"] = "Eliminar persona";
 }
+<h1>Eliminar persona</h1>
+<br>
+<br>
+<form method="post">
+<div>
+    <div class="row">
+        <dt class="col-md-2">        
+            @Html.DisplayNameFor(model => model.Persona.Id)
+        </dt>        
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona.Id)
+        </dd>        
+    </div>
+           
+    <div class="row">
+        <dt class="col-md-2">
+            @Html.DisplayNameFor(model => model.Persona.Nombre)
+        </dt>
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona.Nombre)
+        </dd>
+    </div>
+
+    <div class="row">
+        <dt class="col-md-2">
+            @Html.DisplayNameFor(model => model.Persona.Apellidos)
+        </dt>
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona.Apellidos)
+        </dd>
+    </div>
+
+    <div class="row">
+        <dt class="col-md-2">
+            @Html.DisplayNameFor(model => model.Persona.Documento)
+        </dt>
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona.Documento)
+        </dd>
+    </div>
+
+    <div class="row">
+        <dt class="col-md-2">
+            @Html.DisplayNameFor(model => model.Persona.FechaNacimiento)
+        </dt>
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona.FechaNacimiento)
+        </dd>
+    </div>
+</div>
+<br>
+<div class="mb1">  
+  <input type="submit" class="btn btn-danger" value="Eliminar">  
+  <input class="btn btn-secondary" type="button" onclick="window.location.replace('/Personas/List')" value="Cancelar" />
+</div>
+</form>
+<br>

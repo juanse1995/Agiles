@@ -20,7 +20,7 @@ namespace Frontend.Pages
         }
         public void OnGet()
         {
-            Persona = _repo.GetAllPersona();
+            Persona = _repo.GetAllPersona();           
         }
     }
 }

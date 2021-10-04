@@ -1,4 +1,63 @@
 ﻿@page
-@model MyApp.Namespace.BuscarModel
+@model BuscarUnaPersona.BuscarModel
 @{
+    ViewData["Title"] = "Detalle persona";
 }
+<h1>Información de la persona</h1>
+<br>
+<br>
+<div>
+    <div class="row">
+        <dt class="col-md-2">
+            @Html.DisplayNameFor(model => model.Persona_enc.Id)
+        </dt>
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona_enc.Id)
+        </dd>
+    </div>
+
+    <div class="row">
+        <dt class="col-md-2">
+            @Html.DisplayNameFor(model => model.Persona_enc.Nombre)
+        </dt>
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona_enc.Nombre)
+        </dd>
+    </div>
+
+    <div class="row">
+        <dt class="col-md-2">
+            @Html.DisplayNameFor(model => model.Persona_enc.Apellidos)
+        </dt>
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona_enc.Apellidos)
+        </dd>
+    </div>
+
+    <div class="row">
+        <dt class="col-md-2">
+            @Html.DisplayNameFor(model => model.Persona_enc.Documento)
+        </dt>
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona_enc.Documento)
+        </dd>
+    </div>
+
+    <div class="row">
+        <dt class="col-md-2">
+            @Html.DisplayNameFor(model => model.Persona_enc.FechaNacimiento)
+        </dt>
+        <dd class="col-md-10">
+            @Html.DisplayFor(model => model.Persona_enc.FechaNacimiento)
+        </dd>
+        <br>
+        <br>        
+    </div>
+    <div class="row">
+        <dt class="col-md-2">
+            <input class="btn btn-success" type="button" onclick="window.location.replace('/Personas/List')" value="Aceptar" />
+        </dt>
+    </div>
+</div>
+<br>
+<br>

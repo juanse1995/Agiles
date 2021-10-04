@@ -22,3 +22,15 @@ C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Domin
 C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.dll
 C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\ref\Dominio.dll
 C:\Users\Lenovo X240\Downloads\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.pdb
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\bin\Debug\net5.0\Dominio.deps.json
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\bin\Debug\net5.0\Dominio.dll
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\bin\Debug\net5.0\ref\Dominio.dll
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\bin\Debug\net5.0\Dominio.pdb
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.csproj.AssemblyReference.cache
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfoInputs.cache
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfo.cs
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.dll
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\ref\Dominio.dll
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Dominio\obj\Debug\net5.0\Dominio.pdb

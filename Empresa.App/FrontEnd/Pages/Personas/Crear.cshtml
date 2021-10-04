@@ -1,4 +1,35 @@
 ﻿@page
-@model MyApp.Namespace.CrearModel
+@model MyApp.Namespace.Personas.CrearModel
 @{
+    ViewData["Title"] = "Crear persona";
 }
+<h1>Crear persona</h1>
+<br>
+<br>
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Persona.Nombre" class="control-label"></label>
+                <input asp-for="Persona.Nombre" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Persona.Apellidos" class="control-label"></label>
+                <input asp-for="Persona.Apellidos" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Persona.Documento" class="control-label"></label>
+                <input asp-for="Persona.Documento" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Persona.FechaNacimiento" class="control-label"></label>
+                <input asp-for="Persona.FechaNacimiento" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-success"/>
+                <input class="btn btn-secondary" type="button" onclick="window.location.replace('/Personas/List')" value="Cancelar" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>

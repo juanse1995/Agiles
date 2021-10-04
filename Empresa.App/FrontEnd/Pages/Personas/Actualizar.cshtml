@@ -1,4 +1,39 @@
 ﻿@page
-@model MyApp.Namespace.ActualizarModel
+@model MyApp.Namespace.PersonaA.ActualizarModel
 @{
+    ViewData["Title"] = "Editar persona";
 }
+<h1>Actualizar persona</h1>
+<br>
+<br>
+    <div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Persona.Id" class="control-label"></label>
+                <input asp-for="Persona.Id" class="form-control" type="text"value="persona.Id"></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Persona.Nombre" class="control-label"></label>
+                <input asp-for="Persona.Nombre" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Persona.Apellidos" class="control-label"></label>
+                <input asp-for="Persona.Apellidos" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Persona.Documento" class="control-label"></label>
+                <input asp-for="Persona.Documento" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Persona.FechaNacimiento" class="control-label"></label>
+                <input asp-for="Persona.FechaNacimiento" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Editar" class="btn btn-success"/>
+                <input class="btn btn-secondary" type="button" onclick="window.location.replace('/Personas/List')" value="Cancelar" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>

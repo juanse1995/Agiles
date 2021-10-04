@@ -7,8 +7,8 @@ namespace Persistencia
     public class ApplicationContext : DbContext
     {
 
-        private const string connectionString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EmpresaWEB";
-
+        //private const string connectionString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EmpresaWEB";
+        private const string connectionString = @"Data Source=localhost\sqlexpress;Initial Catalog = AgilesEmpresa;Integrated Security = True";
         public DbSet<Persona> Personas { get; set; }
         public DbSet<Empleado> Empleados { get; set; }
         public DbSet<Cliente> Clientes { get; set; }

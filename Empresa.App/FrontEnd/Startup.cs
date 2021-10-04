@@ -38,7 +38,8 @@ namespace Frontend
             services.AddScoped<I_RepositorioCliente, RepositorioCliente>();            
             services.AddScoped<I_RepositorioDirectivo, RepositorioDirectivo>();
 
-            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EmpresaWEB"));
+            //services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EmpresaWEB"));
+            services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(@"Data Source=localhost\sqlexpress;Initial Catalog = AgilesEmpresa;Integrated Security = True"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

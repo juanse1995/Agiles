@@ -7,15 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dominio;
 using Persistencia;
 
-namespace MyApp.Namespace
-{/*
+namespace BuscarUnaPersona
+{
     public class BuscarModel : PageModel
     {
-        
-        public void OnGet()
-        {
+        private readonly I_RepositorioPersona _repo;
+
+        public Persona Persona_enc { get; set;}
+
+        public BuscarModel(I_RepositorioPersona repo){
+            _repo = repo;
         }
-        
-    }
-    */
+        public void OnGet(int IdPersona)
+        {
+            Persona_enc = _repo.GetPersona(IdPersona);
+        }        
+    }    
 }

@@ -20,7 +20,7 @@ namespace Consola
             Console.WriteLine(" ------ Bienvenido ----- ");
             //Hola esta prueba
             //CRUD para "Persona"
-            //AddPersona();
+            AddPersona();
             //BuscarPersona(3);
 
             //UpdatePersona();
@@ -61,10 +61,10 @@ namespace Consola
 
             var persona = new Persona
             {
-                Nombre = "Polo",
-                Apellidos = "Ro",
-                Documento = "GUAU345",
-                FechaNacimiento = new DateTime(2021, 09, 01)
+                Nombre = "Fabian",
+                Apellidos = "Jaramillo",
+                Documento = "9771362",
+                FechaNacimiento = new DateTime(1984, 12, 25)
             };
 
             _repositorioPersona.AddPersona(persona);

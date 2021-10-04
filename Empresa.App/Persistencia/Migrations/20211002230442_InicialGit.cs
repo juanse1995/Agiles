@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistencia.Migrations
 {
-    public partial class Prueba1 : Migration
+    public partial class InicialGit : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
