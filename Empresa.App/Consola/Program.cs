@@ -77,6 +77,7 @@ namespace Consola
             Console.WriteLine(" -- Se buscará una 'Persona' en la BD 'Empresa' TB 'Personas'. -- ");
 
             var persona = _repositorioPersona.GetPersona(idPersona);
+            //Console.WriteLine("La persona encontrada con el ID " + persona.Persona_id + " es " + persona.Nombre + " " + persona.Apellidos);
             Console.WriteLine("La persona encontrada con el ID " + persona.Id + " es " + persona.Nombre + " " + persona.Apellidos);
         }
 
@@ -88,6 +89,7 @@ namespace Consola
 
             var persona = new Persona
             {
+                //Persona_id = 1,
                 Id = 1,
                 Nombre = "Juan Esteban",
                 Apellidos = "Urdaneta",
