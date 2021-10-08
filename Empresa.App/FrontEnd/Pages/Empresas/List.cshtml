@@ -7,25 +7,50 @@
     <h1>Listado de empresas</h1>
 </div>
 
-<br/>
-<br/>
-<br/>
+<br />
+<br />
+<br />
+
+<a class="btn btn-success" asp-page="./Crear">
+    <i class="fas fa-user-plus"></i>
+</a>
+<br>
+<br>
+<br>
 
 <table class="table">
     <tr>
         <th>ID</th>
         <th>NOMBRE</th>
         <th>CIF</th>
+
+        <th>DETALLE</th>
+        <th>EDITAR</th>
+        <th>ELIMINAR</th>
     </tr>
 
-<table class="table">
-   @foreach (var empresa in Model.Empresas)
-    {
-       <tr>
-           <td>@empresa.Id</td>
-           <td>@empresa.Nombre</td>
-           <td>@empresa.CIF</td>
+    <table class="table">
+        @foreach (var empresa in Model.Empresas)
+        {
+            <tr>
+                <td>@empresa.Id</td>
+                <td>@empresa.Nombre</td>
+                <td>@empresa.CIF</td>
 
-       </tr> 
-    }
+
+                <td><a class="btn btn-info" asp-page="./Buscar" asp-route-IdPersona="@empresa.Id">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                </td>
+                <td><a class="btn btn-warning" asp-page="./Actualizar" asp-route-IdPersona="@empresa.Id">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                </td>
+                <td><a class="btn btn-danger" asp-page="./Eliminar" asp-route-IdPersona="@empresa.Id">
+                        <i class="fas fa-minus-circle"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </table>
 </table>

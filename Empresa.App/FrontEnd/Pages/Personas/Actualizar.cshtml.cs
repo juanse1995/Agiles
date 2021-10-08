@@ -23,6 +23,7 @@ public class ActualizarModel : PageModel
         {
             Persona = _repo.GetPersona(IdPersona);
         }
+        
         public void OnPost(Persona persona)
         {
             _repo.UpdatePersona(persona);
