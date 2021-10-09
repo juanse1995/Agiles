@@ -58,7 +58,7 @@ namespace Persistencia
 
         Cliente I_RepositorioCliente.GetCliente(int IdCliente)
         {
-            return _appContext.Clientes.FirstOrDefault(cli => cli.Id == IdCliente);
+            return _appContext.Clientes.Include(p => p.PerRef).Where(cli => cli.Id == IdCliente).FirstOrDefault();            
         }
 
         Cliente I_RepositorioCliente.UpdateCliente(Cliente cliente)

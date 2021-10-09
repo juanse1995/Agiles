@@ -271,3 +271,5 @@ C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEn
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\ref\FrontEnd.dll
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\FrontEnd.pdb
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\FrontEnd.genruntimeconfig.cache
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Buscar.cshtml.g.cs
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Eliminar.cshtml.g.cs

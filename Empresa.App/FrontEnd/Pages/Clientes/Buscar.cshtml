@@ -1,0 +1,39 @@
+﻿@page
+@model BuscarUnCliente.BuscarModel
+@{
+    ViewData["Title"] = "Detalle cliente";
+}
+<h1>Información del cliente</h1>
+<br>
+<br>
+    <div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Cliente_enc.PerRef.Nombre" class="control-label"></label>
+                <input asp-for="Cliente_enc.PerRef.Nombre" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cliente_enc.PerRef.Apellidos" class="control-label"></label>
+                <input asp-for="Cliente_enc.PerRef.Apellidos" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cliente_enc.PerRef.Documento" class="control-label"></label>
+                <input asp-for="Cliente_enc.PerRef.Documento" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cliente_enc.PerRef.FechaNacimiento" class="control-label"></label>
+                <input asp-for="Cliente_enc.PerRef.FechaNacimiento" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cliente_enc.Telefono" class="control-label"></label>
+                <input asp-for="Cliente_enc.Telefono" class="form-control" readonly></input>
+            </div>
+            <br>
+            <div class="form-group">
+                <input class="btn btn-success" type="button" onclick="window.location.replace('/Clientes/List')" value="Aceptar" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>

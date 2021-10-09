@@ -15634,6 +15634,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Frontend\\Pages\\Clientes\\Eliminar.cshtml",
+      "TargetPath": "Pages\\Clientes\\Eliminar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Frontend\\Pages\\Clientes\\List.cshtml",
       "TargetPath": "Pages\\Clientes\\List.cshtml",
       "FileKind": "mvc"
@@ -15686,6 +15691,11 @@
     {
       "FilePath": "c:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Frontend\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Frontend\\Pages\\Clientes\\Buscar.cshtml",
+      "TargetPath": "Pages\\Clientes\\Buscar.cshtml",
       "FileKind": "mvc"
     },
     {
