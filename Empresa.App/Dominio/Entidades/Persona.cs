@@ -13,5 +13,7 @@ namespace Dominio
         public string Apellidos { get; set; }
         public string Documento { get; set; }
         public DateTime FechaNacimiento { get; set; }
+        public virtual Cliente CliRef { get; set; }
+        public virtual Empleado EmpRef { get; set; }
     }
 }

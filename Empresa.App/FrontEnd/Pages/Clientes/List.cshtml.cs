@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dominio;
 using Persistencia;
 
-namespace Frontend.Pages
+namespace Frontend.ClientList
 {
     public class ListModelClientes : PageModel
     {

@@ -53,7 +53,7 @@ namespace Persistencia
 
         IEnumerable<Cliente> I_RepositorioCliente.GetAllCliente()
         {
-            return _appContext.Clientes.AsNoTracking();
+            return _appContext.Clientes.AsNoTracking().Include(p => p.PerRef);
         }
 
         Cliente I_RepositorioCliente.GetCliente(int IdCliente)

@@ -1,5 +1,5 @@
 ﻿@page
-@model Frontend.Pages.ListModelClientes
+@model Frontend.ClientList.ListModelClientes
 @{
 }
 
@@ -10,21 +10,37 @@
 <br/>
 <br/>
 <br/>
-
-<table class="table">
-    <tr>
-        <th>ID</th>
-        <th>TELEFONO</th>
-        <th>ID EMPRESA</th>
+<a class="btn btn-success" asp-page="./Crear">
+    <i class="fas fa-user-plus"></i>
+</a>
+<br>
+<br>
+<br>
+<table class="table">    
+    <tr>        
+        <th>NOMBRE</th>
+        <th>APELLIDOS</th>
+        <th>DOCUMENTO</th>
+        <th>TELÉFONO</th>
+        <th>DETALLE</th>
+        <th>EDITAR</th>
+        <th>ELIMINAR</th>
     </tr>
 
-<table class="table">
-   @foreach (var cliente in Model.Clientes)
-    {
-       <tr>
-           <td>@cliente.Id</td>
-           <td>@cliente.Telefono</td>
-           <td>@cliente.EsCliente</td>
-       </tr> 
-    }
+    <table class="table">
+    @foreach (var cliente in Model.Clientes)
+        {
+        <tr>
+            <td>@cliente.PerRef.Nombre</td>
+            <td>@cliente.PerRef.Apellidos</td>
+            <td>@cliente.PerRef.Documento</td>
+            <td>@cliente.Telefono</td>
+        </tr> 
+        }
+    </table>
 </table>
+<br>
+<br>
+<a class="btn btn-primary" asp-page="./Index">
+    <i class="fas fa-home"></i>
+</a>

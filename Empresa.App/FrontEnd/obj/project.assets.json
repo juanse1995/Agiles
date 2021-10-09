@@ -5835,19 +5835,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo X240\\.nuget\\packages\\": {}
+    "C:\\Users\\Sumset\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj",
-      "packagesPath": "C:\\Users\\Lenovo X240\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\FrontEnd\\obj\\",
+      "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj",
+      "packagesPath": "C:\\Users\\Sumset\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Lenovo X240\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Sumset\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5859,11 +5859,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj"
+            "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj"
             },
-            "C:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj"
+            "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj"
             }
           }
         }
