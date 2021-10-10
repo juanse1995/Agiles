@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i5vOD10Fy4Wgit1mqn/hk6HcbtGXomUh/aKAWaqqL0BgVFcPdeJHT+pzF+hLj8y4h1IXM7d2qng5xpjdUWuJoQ==",
+  "dgSpecHash": "GgwR0B2d/51Wk7L89WdWN0utAt9Yl287tj16McFk8ZjXbVFWrS0myI+Zw+bymKPkkY08QOpCGZsC262n6PUbZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj",
+  "projectFilePath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sumset\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sumset\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

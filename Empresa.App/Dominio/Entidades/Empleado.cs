@@ -13,7 +13,7 @@ namespace Dominio
 
         [ForeignKey("Persona")]
         public int PersonaId { get; set; }
-        public virtual Persona PerRef { get; set; }
+        public virtual Persona PersonaRef { get; set; }
 
     }
 }

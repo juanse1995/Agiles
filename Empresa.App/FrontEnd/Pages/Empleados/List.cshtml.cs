@@ -13,6 +13,7 @@ namespace Frontend.Pages
     {
 
         private readonly I_RepositorioEmpleado repositorioEmpleado;
+        
         public IEnumerable<Empleado> Empleados { get; set; }
 
         public ListModelEmpleados(I_RepositorioEmpleado repositorioEmpleado)

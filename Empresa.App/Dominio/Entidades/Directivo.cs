@@ -1,6 +1,6 @@
 namespace Dominio
 {
-    public class Directivo //: Empleado
+    public class Directivo
     {
         public int Id { get; set; }
         public int Categoria { get; set; }

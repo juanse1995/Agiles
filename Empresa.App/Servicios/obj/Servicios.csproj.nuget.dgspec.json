@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Servicios\\Servicios.csproj": {}
+    "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Servicios\\Servicios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Servicios\\Servicios.csproj": {
+    "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Servicios\\Servicios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Servicios\\Servicios.csproj",
+        "projectUniqueName": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Servicios\\Servicios.csproj",
         "projectName": "Servicios",
-        "projectPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Servicios\\Servicios.csproj",
-        "packagesPath": "C:\\Users\\Lenovo X240\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo X240\\Downloads\\EMPRESA\\Agiles\\Empresa.App\\Servicios\\obj\\",
+        "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Servicios\\Servicios.csproj",
+        "packagesPath": "C:\\Users\\Sumset\\.nuget\\packages\\",
+        "outputPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Servicios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo X240\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Sumset\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

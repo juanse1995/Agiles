@@ -1,0 +1,43 @@
+﻿@page
+@model DetallesEmpleado.DetallesModel
+@{
+    ViewData["Title"] = "Detalle Empleados";
+}
+<h1>Información del Empleado</h1>
+<br>
+<br>
+    <div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="empleado.PersonaRef.Nombre" class="control-label"></label>
+                <input asp-for="empleado.PersonaRef.Nombre" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="empleado.PersonaRef.Apellidos" class="control-label"></label>
+                <input asp-for="empleado.PersonaRef.Apellidos" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="empleado.PersonaRef.Documento" class="control-label"></label>
+                <input asp-for="empleado.PersonaRef.Documento" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="empleado.PersonaRef.FechaNacimiento" class="control-label"></label>
+                <input asp-for="empleado.PersonaRef.FechaNacimiento" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="empleado.SueldoBruto" class="control-label"></label>
+                <input asp-for="empleado.SueldoBruto" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label asp-for="empleado.Cargo" class="control-label"></label>
+                <input asp-for="empleado.Cargo" class="form-control" readonly></input>
+            </div>
+            <br>
+            <div class="form-group">
+                <input class="btn btn-success" type="button" onclick="window.location.replace('/Empleados/List')" value="Aceptar" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>

@@ -34,12 +34,13 @@ namespace Persistencia
 
         IEnumerable<Empleado> I_RepositorioEmpleado.GetAllEmpleado()
         {
-            return _appContext.Empleados.AsNoTracking();
+            return _appContext.Empleados.AsNoTracking().Include(p => p.PersonaRef).Include(p => p.Empleador);
         }
 
         Empleado I_RepositorioEmpleado.GetEmpleado(int IdEmpleado)
         {
-            return _appContext.Empleados.FirstOrDefault(e => e.Id == IdEmpleado);
+            return _appContext.Empleados.Include(p => p.PersonaRef).Include(p => p.Empleador).Where(emple => emple.Id == IdEmpleado).FirstOrDefault();
+
         }
 
         Empresa I_RepositorioEmpleado.TrabajaEn(int IdEmpleado, int IdEmpresa)

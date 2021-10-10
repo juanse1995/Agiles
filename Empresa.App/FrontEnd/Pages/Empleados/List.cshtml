@@ -13,20 +13,36 @@
 
 <table class="table">
     <tr>
-        <th>ID</th>
-        <th>SUELDO</th>
+        <th>NOMBRE</th>
+        <th>APELLIDOS</th>
         <th>CARGO</th>
-        <th>ID EMPLEADOR</th>
+        <th>EMPRESA</th>
+        <th>DETALLE</th>
+        <th>EDITAR</th>
+        <th>ELIMINAR</th>
     </tr>
 
-<table class="table">
+
    @foreach (var empleados in Model.Empleados)
     {
        <tr>
-           <td>@empleados.Id</td>
-           <td>@empleados.SueldoBruto</td>
+           <td>@empleados.PersonaRef.Nombre</td>
+           <td>@empleados.PersonaRef.Apellidos</td>
            <td>@empleados.Cargo</td>
-           <td>@empleados.Empleador</td>
+           
+           <td>@empleados.Empleador.Nombre</td>
+           <td><a class="btn btn-info" asp-page="./Detalles" asp-route-IdEmpleado="@empleados.Id">
+                    <i class="fas fa-info-circle"></i>
+                </a>
+            </td>
+            <td><a class="btn btn-warning" asp-page="./Actualizar" asp-route-IdEmpleado="@empleados.Id">
+                    <i class="fas fa-edit"></i>
+                </a>
+            </td>
+            <td><a class="btn btn-danger" asp-page="./Eliminar" asp-route-IdEmpleado="@empleados.Id">
+                    <i class="fas fa-minus-circle"></i>
+                </a>
+            </td>
        </tr> 
     }
 </table>

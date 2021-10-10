@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5mEXF1NCoBXCxuIDagu9VTRBa/DM0U66rpRdoXOzIvT0AQ5XgP5OAq2AeSjI7N5EsrlCnBoxljADIpXy+neg4A==",
+  "dgSpecHash": "sl/I9xqM/KCpKF8+Ey3BPqLjvoZMY3psm18LsE1xP2piL2vjIFkgC+6/lU0P/lUl7ksT4NZvjMVotVOtm7gQ1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Consola\\Consola.csproj",
+  "projectFilePath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Consola\\Consola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sumset\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sumset\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -20,7 +20,7 @@ namespace Consola
             Console.WriteLine(" ------ Bienvenido ----- ");
             //Hola esta prueba
             //CRUD para "Persona"
-            AddPersona();
+            //AddPersona();
             //BuscarPersona(3);
 
             //UpdatePersona();
