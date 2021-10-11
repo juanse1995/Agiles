@@ -10,6 +10,6 @@ namespace Persistencia
         Cliente UpdateCliente(Cliente cliente);
         void DeleteCliente(int IdCliente);
         Cliente GetCliente(int IdCliente);
-        Cliente EsCliente(int IdCliente, int IdEmpresa);
+        //Cliente EsCliente(int IdCliente, int IdEmpresa);
     }
 }

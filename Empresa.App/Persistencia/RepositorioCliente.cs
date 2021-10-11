@@ -1,3 +1,4 @@
+using System;
 using System.Data.Common;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +36,7 @@ namespace Persistencia
             _appContext.SaveChanges();
         }
 
-        Cliente I_RepositorioCliente.EsCliente(int IdCliente, int IdEmpresa)
+        /*Cliente I_RepositorioCliente.EsCliente(int IdCliente, int IdEmpresa)
         {
             var ClienteEncontrado = _appContext.Clientes.FirstOrDefault(cli => cli.Id == IdCliente);
             if (ClienteEncontrado != null)
@@ -49,25 +50,32 @@ namespace Persistencia
                 return ClienteEncontrado;
             }
             return null;
-        }
+        }*/
 
         IEnumerable<Cliente> I_RepositorioCliente.GetAllCliente()
         {
-            return _appContext.Clientes.AsNoTracking().Include(p => p.PerRef);
+            return _appContext.Clientes.AsNoTracking().Include(p => p.PerRef).Include(e => e.EmpRef);
         }
 
         Cliente I_RepositorioCliente.GetCliente(int IdCliente)
         {
-            return _appContext.Clientes.Include(p => p.PerRef).Where(cli => cli.Id == IdCliente).FirstOrDefault();            
+            return _appContext.Clientes.Include(p => p.PerRef).Include(e => e.EmpRef).Where(cli => cli.Id == IdCliente).FirstOrDefault();            
         }
 
         Cliente I_RepositorioCliente.UpdateCliente(Cliente cliente)
         {
-            var ClienteEncontrado = _appContext.Clientes.FirstOrDefault(cli => cli.Id == cliente.Id);
+            //var ClienteEncontrado = _appContext.Clientes.FirstOrDefault(cli => cli.Id == cliente.Id);            
+            var ClienteEncontrado =_appContext.Clientes.Include(p => p.PerRef).Include(e => e.EmpRef).FirstOrDefault(cli => cli.Id == cliente.Id);
+            Console.WriteLine("Cliente Encontrado:" + ClienteEncontrado.Id);
+            Console.WriteLine("Cliente Actualizar:" + cliente.Id);
             if (ClienteEncontrado != null)
             {
+                ClienteEncontrado.PerRef.Nombre = cliente.PerRef.Nombre;
+                ClienteEncontrado.PerRef.Apellidos = cliente.PerRef.Apellidos;
+                ClienteEncontrado.PerRef.Documento = cliente.PerRef.Documento;
+                ClienteEncontrado.PerRef.FechaNacimiento = cliente.PerRef.FechaNacimiento;
                 ClienteEncontrado.Telefono = cliente.Telefono;
-                ClienteEncontrado.EsCliente = cliente.EsCliente;                
+                ClienteEncontrado.EmpresaId = cliente.EmpresaId;           
                 _appContext.SaveChanges();
             }               
             return ClienteEncontrado;

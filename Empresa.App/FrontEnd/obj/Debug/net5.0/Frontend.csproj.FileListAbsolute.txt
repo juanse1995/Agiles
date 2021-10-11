@@ -369,3 +369,8 @@ C:\Misión Tic\Proyecto-6\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\FrontEnd.
 C:\Misión Tic\Proyecto-6\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Detalles.cshtml.g.cs
 C:\Misión Tic\Proyecto-6\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Actualizar.cshtml.g.cs
 C:\Misión Tic\Proyecto-6\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Eliminar.cshtml.g.cs
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Crear.cshtml.g.cs
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Actualizar.cshtml.g.cs
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Detalles.cshtml.g.cs
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Eliminar.cshtml.g.cs
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Actualizar.cshtml.g.cs

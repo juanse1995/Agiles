@@ -171,7 +171,7 @@ namespace Consola
         }
 
         //Metodo para relacionar el Cliente con la Empresa
-        private static void EsCliente()
+        /*private static void EsCliente()
         {
             Console.WriteLine(" -- Se relacionará un 'Cliente' con una 'Empresa'. -- ");
 
@@ -179,7 +179,7 @@ namespace Consola
 
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
             Console.WriteLine("El cliente con teléfono" + cliente.Telefono + " está relacionado con la empresa" + cliente.Id);
-        }
+        }*/
 
 
         //Metodo para actualizar el Cliente

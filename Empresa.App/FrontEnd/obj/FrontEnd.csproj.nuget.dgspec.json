@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj": {}
+    "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\Sumset\\.nuget\\packages\\",
-        "outputPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sumset\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -56,14 +56,14 @@
         }
       }
     },
-    "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj": {
+    "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj",
+        "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\FrontEnd\\FrontEnd.csproj",
         "packagesPath": "C:\\Users\\Sumset\\.nuget\\packages\\",
-        "outputPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\FrontEnd\\obj\\",
+        "outputPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sumset\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -78,11 +78,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj"
               },
-              "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj"
+              "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -140,14 +140,14 @@
         }
       }
     },
-    "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj",
+        "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\Sumset\\.nuget\\packages\\",
-        "outputPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Persistencia\\obj\\",
+        "outputPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sumset\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -162,8 +162,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj"
+              "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj"
               }
             }
           }
