@@ -4,13 +4,35 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Dominio;
+using Persistencia;
 
 namespace ActualizarEmpleado
 {
     public class ActualizarModel : PageModel
     {
-        public void OnGet()
-        {
+        private readonly I_RepositorioPersona _repoP;
+        private readonly I_RepositorioEmpleado _repo;
+        private readonly I_RepositorioEmpresa _repoE;
+        public Empleado Empleado { get; set;}
+        public Persona Persona { get; set;}
+        public IEnumerable<Empresa> Empresas { get; set; }
+
+        public ActualizarModel(I_RepositorioEmpleado repo, I_RepositorioPersona repo2, I_RepositorioEmpresa repo3){
+            _repo = repo;
+            _repoP = repo2;
+            _repoE = repo3;
         }
+        public void OnGet(int IdEmpleado)
+        {
+            Empleado = _repo.GetEmpleado(IdEmpleado);
+            Empresas = _repoE.GetAllEmpresa();
+        }
+        public void OnPost(Empleado empleado)
+        {            
+            Empresas = _repoE.GetAllEmpresa();
+            _repo.UpdateEmpleado(empleado);
+            Response.Redirect("/Empleados/List");
+        } 
     }
 }

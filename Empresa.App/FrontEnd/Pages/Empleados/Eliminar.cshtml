@@ -1,4 +1,47 @@
 ﻿@page
 @model EliminarEmpleado.EliminarModel
 @{
+    ViewData["Title"] = "Eliminar Empleados";
 }
+<h1>Eliminar empleado</h1>
+<br>
+<br>
+    <div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label for="name"><b>Nombres :</b></label>
+                <input asp-for="Empleado_enc.PersonaRef.Nombre" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="last_name"><b>Apellidos :</b></label>
+                <input asp-for="Empleado_enc.PersonaRef.Apellidos" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="nit"><b>Documento :</b></label>
+                <input asp-for="Empleado_enc.PersonaRef.Documento" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="date"><b>Fecha de nacimiento :</b></label>
+                <input asp-for="Empleado_enc.PersonaRef.FechaNacimiento" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="sueldo"><b>Sueldo Bruto :</b></label>
+                <input asp-for="Empleado_enc.SueldoBruto" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="cargo"><b>Cargo :</b></label>
+                <input asp-for="Empleado_enc.Cargo" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="company"><b>Empresa :</b></label>
+                <input asp-for="Empleado_enc.EmpresaRef.Nombre" class="form-control" readonly></input>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Eliminar" class="btn btn-danger"/>
+                <input class="btn btn-secondary" type="button" onclick="window.location.replace('/Empleados/List')" value="Cancelar" />
+        </form>
+    </div>
+</div>
+<br>

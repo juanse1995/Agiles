@@ -61,7 +61,7 @@ namespace Persistencia
 
         Empleado I_RepositorioEmpleado.UpdateEmpleado(Empleado empleado)
         {
-            var empleadoEncontrado = _appContext.Empleados.FirstOrDefault(e => e.Id == empleado.Id);
+            var empleadoEncontrado = _appContext.Empleados.Include(p => p.PersonaRef).Include(e => e.EmpresaRef).FirstOrDefault(emp => emp.Id == empleado.Id);
             if (empleadoEncontrado != null)
             {
                 empleadoEncontrado.PersonaRef.Nombre = empleado.PersonaRef.Nombre;

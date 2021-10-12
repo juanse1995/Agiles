@@ -1,4 +1,58 @@
 ﻿@page
 @model ActualizarEmpleado.ActualizarModel
 @{
+     ViewData["Title"] = "Actualizar empleado";
 }
+<h1>Actualizar empleado</h1>
+<br>
+<br>
+    <div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+            <div class="form-group">
+                <input asp-for="Empleado.Id" class="form-control"type="hidden"></input>
+            </div>
+                <label for="name"><b>Nombres :</b></label>
+                <input asp-for="Empleado.PersonaRef.Nombre" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label for="last_name"><b>Apellidos :</b></label>
+                <input asp-for="Empleado.PersonaRef.Apellidos" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label for="nit"><b>Documento :</b></label>
+                <input asp-for="Empleado.PersonaRef.Documento" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label for="date"><b>Fecha de nacimiento :</b></label>
+                <input asp-for="Empleado.PersonaRef.FechaNacimiento" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label for="sueldo"><b>Sueldo :</b></label>
+                <input asp-for="Empleado.SueldoBruto" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label for="sueldo"><b>Cargo :</b></label>
+                <input asp-for="Empleado.Cargo" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label for="companyL"><b>Empresa :</b></label>
+                <select asp-for="Empleado.EmpresaId" class="form-control">
+                   
+                    @foreach (var empresa in Model.Empresas)
+                    {
+                        <option value="@empresa.Id">@empresa.Nombre</option>
+                    
+                    }
+                </select>      
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Editar" class="btn btn-success"/>
+                <input class="btn btn-secondary" type="button" onclick="window.location.replace('/Empleados/List')" value="Cancelar" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>
