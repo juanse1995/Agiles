@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dominio;
 using Persistencia;
 
-namespace Frontend.Pages
+namespace Frontend.EmpresaList
 {
     public class ListModelEmpresas : PageModel
     {
         private readonly I_RepositorioEmpresa repositorioEmpresa;
-        public IEnumerable<Empresa> Empresas { get; set; }
+        public IEnumerable<Empresa> EmpresasList { get; set; }
 
         public ListModelEmpresas(I_RepositorioEmpresa repositorioEmpresa)
         {
@@ -21,7 +21,7 @@ namespace Frontend.Pages
 
         public void OnGet()
         {
-            Empresas = repositorioEmpresa.GetAllEmpresa();
+            EmpresasList = repositorioEmpresa.GetAllEmpresa();
         }
     }
 }

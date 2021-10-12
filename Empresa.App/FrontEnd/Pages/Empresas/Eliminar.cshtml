@@ -1,8 +1,29 @@
 ﻿@page
-@model MyApp.Namespace.EliminarModel
+@model EliminarUnaEmpresa.EliminarModel
 @{
+    ViewData["Title"] = "Eliminar empresa";
 }
 
-<div class="text-center center">
-    <h1>Eliminar empresas</h1>
+<h1>Eliminar empresa</h1>
+<br>
+<br>
+    <div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label for="name"><b>Nombre :</b></label>
+                <input asp-for="Empresa_enc.Nombre" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="last_name"><b>CIF :</b></label>
+                <input asp-for="Empresa_enc.CIF" class="form-control" readonly></input>
+            </div>           
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Eliminar" class="btn btn-danger"/>
+                <input class="btn btn-secondary" type="button" onclick="window.location.replace('/Empresas/List')" value="Cancelar" />
+            </div>
+        </form>
+    </div>
 </div>
+<br>

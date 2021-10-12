@@ -7,12 +7,25 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dominio;
 using Persistencia;
 
-namespace MyApp.Namespace
+namespace EliminarUnaEmpresa
 {
-    public class EliminarModel : PageModel
+    public  class EliminarModel : PageModel
     {
-        public void OnGet()
+        private readonly I_RepositorioEmpresa _repo;
+        public Empresa Empresa_enc { get; set;}
+                
+        public EliminarModel (I_RepositorioEmpresa repo)
         {
+            _repo = repo;
+        }
+        public void OnGet(int IdEmpresa)
+        {
+            Empresa_enc = _repo.GetEmpresa(IdEmpresa);
+        }
+        public void OnPost(int IdEmpresa)
+        {
+            _repo.DeleteEmpresa(IdEmpresa);            
+            Response.Redirect("/Empresas/List");
         }
     }
 }

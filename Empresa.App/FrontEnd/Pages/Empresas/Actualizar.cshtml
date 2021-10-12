@@ -1,8 +1,30 @@
 ﻿@page
-@model MyApp.Namespace.ActualizarModel
+@model ActualizarEmpresa.ActualizarModel
 @{
 }
-
-<div class="text-center center">
-    <h1>Actualizar empresas</h1>
+<h1>Actualizar empresa</h1>
+<br>
+<br>
+    <div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <input asp-for="Empresa.Id" class="form-control"type="hidden"></input>
+            </div>
+            <div class="form-group">
+                <label for="name"><b>Nombre :</b></label>
+                <input asp-for="Empresa.Nombre" class="form-control"></input>
+            </div>
+            <div class="form-group">
+                <label for="last_name"><b>CIF :</b></label>
+                <input asp-for="Empresa.CIF" class="form-control"></input>
+            </div>           
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Editar" class="btn btn-success"/>
+                <input class="btn btn-secondary" type="button" onclick="window.location.replace('/Empresas/List')" value="Cancelar" />
+            </div>
+        </form>
+    </div>
 </div>
+<br>

@@ -1,6 +1,7 @@
 ﻿@page
 @model Frontend.ClientList.ListModelClientes
 @{
+    ViewData["Title"] = "Clientes";
 }
 
 <div class="text-center center">
@@ -27,7 +28,6 @@
         <th>ELIMINAR</th>
     </tr>
 
-    <table class="table">
     @foreach (var cliente in Model.Clientes)
         {
         <tr>
@@ -50,7 +50,6 @@
             </td>
         </tr> 
         }
-    </table>
 </table>
 <br>
 <br>

@@ -7,12 +7,20 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dominio;
 using Persistencia;
 
-namespace MyApp.Namespace
+namespace BuscarUnaEmpresa
 {
     public class BuscarModel : PageModel
     {
-        public void OnGet()
+        private readonly I_RepositorioEmpresa _repo;
+
+        public Empresa Empresa_enc { get; set; }
+
+        public BuscarModel(I_RepositorioEmpresa repo){
+            _repo = repo;
+        }
+        public void OnGet(int IdEmpresa)
         {
+            Empresa_enc = _repo.GetEmpresa(IdEmpresa);
         }
     }
 }
