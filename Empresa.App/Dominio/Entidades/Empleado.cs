@@ -8,6 +8,7 @@ namespace Dominio
         public int Id { get; set; }
         public int SueldoBruto { get; set; }
         public string Cargo { get; set; }
+        public virtual Directivo DirRef { get; set; }
 
         [ForeignKey("Persona")]
         public int PersonaId { get; set; }

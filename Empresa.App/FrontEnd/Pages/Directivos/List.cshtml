@@ -1,5 +1,5 @@
 ﻿@page
-@model Frontend.Pages.ListModelDirectivos
+@model ListarDirectivos.ModelDirectivos
 @{
 }
 
@@ -10,13 +10,15 @@
 <br/>
 <br/>
 <br/>
-
+<a class="btn btn-success" asp-page="./Crear">
+    <i class="fas fa-user-plus"></i>
+</a>
+<br>
+<br>
+<br>
 <table class="table">
     <tr>
-        <th>ID</th>
         <th>CATEGORIA</th>
-        <th>ID SUBORDINADO</th>
-        <th>DIRIGE EMPRESA</th>
     </tr>
 
 
@@ -24,10 +26,12 @@
    @foreach (var directivo in Model.Directivos)
     {
        <tr>
-           <td>@directivo.Id</td>
            <td>@directivo.Categoria</td>
-           <td>@directivo.Subordinado</td>
-           <td>@directivo.Dirige</td>         
        </tr> 
     }
 </table>
+<br>
+<br>
+<a class="btn btn-primary" asp-page="./Index">
+    <i class="fas fa-home"></i>
+</a>

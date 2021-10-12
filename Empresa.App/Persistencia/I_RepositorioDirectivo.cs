@@ -10,7 +10,7 @@ namespace Persistencia
         Directivo UpdateDirectivo(Directivo directivo);
         void DeleteDirectivo(int IdDirectivo);
         Directivo GetDirectivo(int IdDirectivo);
-        Directivo Subordinado(int IdDirectivo, int IdEmpleado);
-        Directivo Dirige(int IdDirectivo, int IdEmpresa);
+        //Directivo Subordinado(int IdDirectivo, int IdEmpleado);
+        //Directivo Dirige(int IdDirectivo, int IdEmpresa);
     }
 }

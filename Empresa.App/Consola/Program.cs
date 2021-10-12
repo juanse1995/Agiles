@@ -282,7 +282,7 @@ namespace Consola
         }
 
         //Metodo para relacionar el Directivo con el Empleado que dirige
-        private static void Subordinado()
+        /*private static void Subordinado()
         {
             Console.WriteLine(" -- Se relacionará un 'Directivo' con un 'Empleado'. -- ");
 
@@ -290,10 +290,10 @@ namespace Consola
 
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
             Console.WriteLine("El Directivo con categoria " + directivo.Categoria + " su subordinado es" + directivo.Subordinado);
-        }
+        }*/
 
         //Metodo para relacionar el Directivo con la Empresa que dirige
-        private static void Dirige()
+        /*private static void Dirige()
         {
             Console.WriteLine(" -- Se relacionará un 'Directivo' con una 'Empresa'. -- ");
 
@@ -301,7 +301,7 @@ namespace Consola
 
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
             Console.WriteLine("El Directivo con categoria " + directivo.Categoria + " su empresa es" + directivo.Dirige);
-        }
+        }*/
 
 
         //Metodo para actualizar el Directivo

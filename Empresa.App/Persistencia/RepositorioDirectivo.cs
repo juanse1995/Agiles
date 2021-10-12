@@ -31,7 +31,7 @@ namespace Persistencia
             _appContext.SaveChanges();
         }
 
-        Directivo I_RepositorioDirectivo.Dirige(int IdDirectivo, int IdEmpresa)
+        /*Directivo I_RepositorioDirectivo.Dirige(int IdDirectivo, int IdEmpresa)
         {
             var DirectivoEncontrado = _appContext.Directivos.FirstOrDefault(p => p.Id == IdDirectivo);
             if (DirectivoEncontrado != null)
@@ -45,7 +45,7 @@ namespace Persistencia
                 return DirectivoEncontrado;
             }
             return null;
-        }
+        }*/
 
         IEnumerable<Directivo> I_RepositorioDirectivo.GetAllDirectivo()
         {
@@ -57,7 +57,7 @@ namespace Persistencia
             return _appContext.Directivos.FirstOrDefault(p => p.Id == IdDirectivo);
         }
 
-        Directivo I_RepositorioDirectivo.Subordinado(int IdDirectivo, int IdEmpleado)
+        /*Directivo I_RepositorioDirectivo.Subordinado(int IdDirectivo, int IdEmpleado)
         {
             var DirectivoEncontrado = _appContext.Directivos.FirstOrDefault(p => p.Id == IdDirectivo);
             if (DirectivoEncontrado != null)
@@ -71,7 +71,7 @@ namespace Persistencia
                 return DirectivoEncontrado;
             }
             return null;
-        }
+        }*/
 
       
 
@@ -81,8 +81,8 @@ namespace Persistencia
             if (DirectivoEncontrado != null)
             {
                 DirectivoEncontrado.Categoria = directivo.Categoria;
-                DirectivoEncontrado.Subordinado = directivo.Subordinado;
-                DirectivoEncontrado.Dirige = directivo.Dirige;
+                //DirectivoEncontrado.Subordinado = directivo.Subordinado;
+                //DirectivoEncontrado.Dirige = directivo.Dirige;
                 _appContext.SaveChanges();
             }
             return DirectivoEncontrado;
