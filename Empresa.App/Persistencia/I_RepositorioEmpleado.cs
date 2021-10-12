@@ -10,6 +10,6 @@ namespace Persistencia
         Empleado UpdateEmpleado(Empleado empleado);
         void DeleteEmpleado(int IdEmpleado);
         Empleado GetEmpleado(int IdEmpleado);
-        Empresa TrabajaEn(int IdEmpleado, int IdEmpresa);
+        //Empresa TrabajaEn(int IdEmpleado, int IdEmpresa);
     }
 }

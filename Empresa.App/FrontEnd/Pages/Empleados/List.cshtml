@@ -10,13 +10,19 @@
 <br/>
 <br/>
 <br/>
-
+<a class="btn btn-success" asp-page="./Crear">
+    <i class="fas fa-user-plus"></i>
+</a>
+<br>
+<br>
+<br>
 <table class="table">
     <tr>
         <th>NOMBRE</th>
         <th>APELLIDOS</th>
-        <th>CARGO</th>
-        <th>EMPRESA</th>
+        <th>DOCUMENTO</th>
+        <th>CARGO</th>       
+        <!--<th>EMPRESA</th> -->
         <th>DETALLE</th>
         <th>EDITAR</th>
         <th>ELIMINAR</th>
@@ -28,9 +34,10 @@
        <tr>
            <td>@empleados.PersonaRef.Nombre</td>
            <td>@empleados.PersonaRef.Apellidos</td>
-           <td>@empleados.Cargo</td>
-           
-           <td>@empleados.Empleador.Nombre</td>
+           <td>@empleados.PersonaRef.Documento</td>
+           <td>@empleados.Cargo</td>           
+           <!--<td>empleados.EmpresaRef.Nombre<td>-->
+
            <td><a class="btn btn-info" asp-page="./Detalles" asp-route-IdEmpleado="@empleados.Id">
                     <i class="fas fa-info-circle"></i>
                 </a>
@@ -46,4 +53,8 @@
        </tr> 
     }
 </table>
-
+<br>
+<br>
+<a class="btn btn-primary" asp-page="./Index">
+    <i class="fas fa-home"></i>
+</a>

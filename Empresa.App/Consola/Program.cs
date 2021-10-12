@@ -226,7 +226,7 @@ namespace Consola
         }
 
         //Metodo para relacionar el Empleado con la Empresa
-        private static void TrabajaEn()
+        /*private static void TrabajaEn()
         {
             Console.WriteLine(" -- Se relacionará un 'Empleado' con una 'Empresa'. -- ");
 
@@ -234,7 +234,7 @@ namespace Consola
 
             Console.WriteLine("-- Se ha relacionado correctamente, por favor verifique la BD. -- ");
             Console.WriteLine("El empleado con ID " + empleado.Id + " Está relacionado con la empresa" + empleado.Nombre);
-        }
+        }*/
 
 
         //Metodo para actualizar el Empleado

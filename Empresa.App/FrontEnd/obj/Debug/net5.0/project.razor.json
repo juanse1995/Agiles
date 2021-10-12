@@ -15644,6 +15644,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Frontend\\Pages\\Empleados\\Crear.cshtml",
+      "TargetPath": "Pages\\Empleados\\Crear.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Frontend\\Pages\\Clientes\\List.cshtml",
       "TargetPath": "Pages\\Clientes\\List.cshtml",
       "FileKind": "mvc"

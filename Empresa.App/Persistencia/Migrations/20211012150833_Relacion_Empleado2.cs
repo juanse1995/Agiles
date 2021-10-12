@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Persistencia.Migrations
 {
-    public partial class InicialGit : Migration
+    public partial class Relacion_Empleado2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -44,17 +44,24 @@ namespace Persistencia.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EsClienteId = table.Column<int>(type: "int", nullable: true)
+                    PersonaId = table.Column<int>(type: "int", nullable: false),
+                    EmpresaId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Clientes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Clientes_Empresas_EsClienteId",
-                        column: x => x.EsClienteId,
+                        name: "FK_Clientes_Empresas_EmpresaId",
+                        column: x => x.EmpresaId,
                         principalTable: "Empresas",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Clientes_Personas_PersonaId",
+                        column: x => x.PersonaId,
+                        principalTable: "Personas",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -65,17 +72,24 @@ namespace Persistencia.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     SueldoBruto = table.Column<int>(type: "int", nullable: false),
                     Cargo = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    EmpleadorId = table.Column<int>(type: "int", nullable: true)
+                    PersonaId = table.Column<int>(type: "int", nullable: false),
+                    EmpresaId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Empleados", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Empleados_Empresas_EmpleadorId",
-                        column: x => x.EmpleadorId,
+                        name: "FK_Empleados_Empresas_EmpresaId",
+                        column: x => x.EmpresaId,
                         principalTable: "Empresas",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Empleados_Personas_PersonaId",
+                        column: x => x.PersonaId,
+                        principalTable: "Personas",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -106,9 +120,15 @@ namespace Persistencia.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Clientes_EsClienteId",
+                name: "IX_Clientes_EmpresaId",
                 table: "Clientes",
-                column: "EsClienteId");
+                column: "EmpresaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Clientes_PersonaId",
+                table: "Clientes",
+                column: "PersonaId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Directivos_DirigeId",
@@ -121,9 +141,15 @@ namespace Persistencia.Migrations
                 column: "SubordinadoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Empleados_EmpleadorId",
+                name: "IX_Empleados_EmpresaId",
                 table: "Empleados",
-                column: "EmpleadorId");
+                column: "EmpresaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Empleados_PersonaId",
+                table: "Empleados",
+                column: "PersonaId",
+                unique: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -135,13 +161,13 @@ namespace Persistencia.Migrations
                 name: "Directivos");
 
             migrationBuilder.DropTable(
-                name: "Personas");
-
-            migrationBuilder.DropTable(
                 name: "Empleados");
 
             migrationBuilder.DropTable(
                 name: "Empresas");
+
+            migrationBuilder.DropTable(
+                name: "Personas");
         }
     }
 }

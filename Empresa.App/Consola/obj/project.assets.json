@@ -5801,11 +5801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Consola\\Consola.csproj",
+      "projectUniqueName": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Consola\\Consola.csproj",
       "projectName": "Consola",
-      "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Consola\\Consola.csproj",
+      "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Consola\\Consola.csproj",
       "packagesPath": "C:\\Users\\Sumset\\.nuget\\packages\\",
-      "outputPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Consola\\obj\\",
+      "outputPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sumset\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5820,11 +5820,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj"
+            "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Dominio\\Dominio.csproj"
             },
-            "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "C:\\Misión Tic\\Proyecto-6\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj"
+            "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "C:\\Users\\Sumset\\Videos\\ProyectosMinTic\\Agiles_Empresa\\Agiles\\Empresa.App\\Persistencia\\Persistencia.csproj"
             }
           }
         }

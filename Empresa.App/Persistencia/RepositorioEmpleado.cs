@@ -34,16 +34,16 @@ namespace Persistencia
 
         IEnumerable<Empleado> I_RepositorioEmpleado.GetAllEmpleado()
         {
-            return _appContext.Empleados.AsNoTracking().Include(p => p.PersonaRef).Include(p => p.Empleador);
+            return _appContext.Empleados.AsNoTracking().Include(p => p.PersonaRef).Include(e => e.EmpresaRef);
         }
 
         Empleado I_RepositorioEmpleado.GetEmpleado(int IdEmpleado)
         {
-            return _appContext.Empleados.Include(p => p.PersonaRef).Include(p => p.Empleador).Where(emple => emple.Id == IdEmpleado).FirstOrDefault();
+            return _appContext.Empleados.Include(p => p.PersonaRef).Include(e => e.EmpresaRef).Where(emple => emple.Id == IdEmpleado).FirstOrDefault();
 
         }
-
-        Empresa I_RepositorioEmpleado.TrabajaEn(int IdEmpleado, int IdEmpresa)
+ 
+        /*Empresa I_RepositorioEmpleado.TrabajaEn(int IdEmpleado, int IdEmpresa)
         {
             var empleadoEncontrado = _appContext.Empleados.FirstOrDefault(e => e.Id == IdEmpleado);
             if (empleadoEncontrado != null)
@@ -51,21 +51,26 @@ namespace Persistencia
                 var empresaEncontrada = _appContext.Empresas.FirstOrDefault(em => em.Id == IdEmpresa);
                 if (empresaEncontrada != null)
                 {
-                    empleadoEncontrado.Empleador = empresaEncontrada;
+                    empleadoEncontrado.EmpRef = empresaEncontrada;
                     _appContext.SaveChanges();
                 }
                 return empresaEncontrada;
             }
             return null;
-        }
+        }*/
 
         Empleado I_RepositorioEmpleado.UpdateEmpleado(Empleado empleado)
         {
             var empleadoEncontrado = _appContext.Empleados.FirstOrDefault(e => e.Id == empleado.Id);
             if (empleadoEncontrado != null)
             {
+                empleadoEncontrado.PersonaRef.Nombre = empleado.PersonaRef.Nombre;
+                empleadoEncontrado.PersonaRef.Apellidos = empleado.PersonaRef.Apellidos;
+                empleadoEncontrado.PersonaRef.Documento = empleado.PersonaRef.Documento;
+                empleadoEncontrado.PersonaRef.FechaNacimiento = empleado.PersonaRef.FechaNacimiento;
                 empleadoEncontrado.SueldoBruto = empleado.SueldoBruto;
-                empleadoEncontrado.Cargo = empleado.Cargo;                
+                empleadoEncontrado.Cargo = empleado.Cargo;          
+                empleadoEncontrado.EmpresaId = empleado.EmpresaId;        
                 _appContext.SaveChanges();
             }
             return empleadoEncontrado;            

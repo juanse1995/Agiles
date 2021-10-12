@@ -374,3 +374,4 @@ C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEn
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Detalles.cshtml.g.cs
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Eliminar.cshtml.g.cs
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Clientes\Actualizar.cshtml.g.cs
+C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\FrontEnd\obj\Debug\net5.0\Razor\Pages\Empleados\Crear.cshtml.g.cs

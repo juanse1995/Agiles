@@ -26,7 +26,7 @@ namespace Persistencia.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("EsClienteId")
+                    b.Property<int>("EmpresaId")
                         .HasColumnType("int");
 
                     b.Property<int>("PersonaId")
@@ -37,7 +37,7 @@ namespace Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EsClienteId");
+                    b.HasIndex("EmpresaId");
 
                     b.HasIndex("PersonaId")
                         .IsUnique();
@@ -80,7 +80,7 @@ namespace Persistencia.Migrations
                     b.Property<string>("Cargo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("EmpleadorId")
+                    b.Property<int>("EmpresaId")
                         .HasColumnType("int");
 
                     b.Property<int>("PersonaId")
@@ -91,7 +91,7 @@ namespace Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EmpleadorId");
+                    b.HasIndex("EmpresaId");
 
                     b.HasIndex("PersonaId")
                         .IsUnique();
@@ -143,9 +143,11 @@ namespace Persistencia.Migrations
 
             modelBuilder.Entity("Dominio.Cliente", b =>
                 {
-                    b.HasOne("Dominio.Empresa", "EsCliente")
-                        .WithMany()
-                        .HasForeignKey("EsClienteId");
+                    b.HasOne("Dominio.Empresa", "EmpRef")
+                        .WithMany("ClienteLista")
+                        .HasForeignKey("EmpresaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Dominio.Persona", "PerRef")
                         .WithOne("CliRef")
@@ -153,7 +155,7 @@ namespace Persistencia.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("EsCliente");
+                    b.Navigation("EmpRef");
 
                     b.Navigation("PerRef");
                 });
@@ -175,19 +177,28 @@ namespace Persistencia.Migrations
 
             modelBuilder.Entity("Dominio.Empleado", b =>
                 {
-                    b.HasOne("Dominio.Empresa", "Empleador")
-                        .WithMany()
-                        .HasForeignKey("EmpleadorId");
+                    b.HasOne("Dominio.Empresa", "EmpresaRef")
+                        .WithMany("EmpleadoLista")
+                        .HasForeignKey("EmpresaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Dominio.Persona", "PerRef")
+                    b.HasOne("Dominio.Persona", "PersonaRef")
                         .WithOne("EmpRef")
                         .HasForeignKey("Dominio.Empleado", "PersonaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Empleador");
+                    b.Navigation("EmpresaRef");
 
-                    b.Navigation("PerRef");
+                    b.Navigation("PersonaRef");
+                });
+
+            modelBuilder.Entity("Dominio.Empresa", b =>
+                {
+                    b.Navigation("ClienteLista");
+
+                    b.Navigation("EmpleadoLista");
                 });
 
             modelBuilder.Entity("Dominio.Persona", b =>
