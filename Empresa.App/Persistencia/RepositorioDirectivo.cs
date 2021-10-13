@@ -77,9 +77,10 @@ namespace Persistencia
 
         Directivo I_RepositorioDirectivo.UpdateDirectivo(Directivo directivo)
         {
-            var DirectivoEncontrado = _appContext.Directivos.FirstOrDefault(p => p.Id == directivo.Id);
+            var DirectivoEncontrado = _appContext.Directivos.Where(p => p.Id == directivo.Id).FirstOrDefault();
             if (DirectivoEncontrado != null)
             {
+                DirectivoEncontrado.EmpleadoId = directivo.EmpleadoId;
                 DirectivoEncontrado.Categoria = directivo.Categoria;
                 //DirectivoEncontrado.Subordinado = directivo.Subordinado;
                 //DirectivoEncontrado.Dirige = directivo.Dirige;
