@@ -18,6 +18,9 @@
 <br>
 <table class="table">
     <tr>
+        <th>NOMBRE</th>
+        <th>APELLIDOS</th>
+        <th>DOCUMENTO</th>
         <th>CARGO</th>        
         <th>CATEGORÍA</th>
         <th>DETALLE</th>
@@ -27,6 +30,9 @@
    @foreach (var directivo in Model.Directivos)
     {
        <tr>
+        <td>@directivo.EmpleadoRef.PersonaRef.Nombre</td>
+        <td>@directivo.EmpleadoRef.PersonaRef.Apellidos</td>
+        <td>@directivo.EmpleadoRef.PersonaRef.Documento</td>
         <td>@directivo.EmpleadoRef.Cargo</td>
         <td>@directivo.Categoria</td>
 

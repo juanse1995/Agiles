@@ -10,8 +10,32 @@
     <div class="col-md-4">
         <form method="post">
             <div class="form-group">
+                <label for="name"><b>Nombre :</b></label>
+                <input asp-for="Directivo_enc.EmpleadoRef.PersonaRef.Nombre" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="last_name"><b>Apellidos :</b></label>
+                <input asp-for="Directivo_enc.EmpleadoRef.PersonaRef.Apellidos" class="form-control" readonly></input>
+            </div> 
+            <div class="form-group">
+                <label for="last_name"><b>Documento :</b></label>
+                <input asp-for="Directivo_enc.EmpleadoRef.PersonaRef.Documento" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="last_name"><b>Fecha de nacimiento :</b></label>
+                <input asp-for="Directivo_enc.EmpleadoRef.PersonaRef.FechaNacimiento" class="form-control" readonly></input>
+            </div> 
+            <div class="form-group">
+                <label for="last_name"><b>Sueldo bruto :</b></label>
+                <input asp-for="Directivo_enc.EmpleadoRef.SueldoBruto" class="form-control" readonly></input>
+            </div> 
+            <div class="form-group">
                 <label for="name"><b>Cargo :</b></label>
                 <input asp-for="Directivo_enc.EmpleadoRef.Cargo" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="name"><b>Empresa :</b></label>
+                <input asp-for="Directivo_enc.EmpleadoRef.EmpresaRef.Nombre" class="form-control" readonly></input>
             </div>
             <div class="form-group">
                 <label for="last_name"><b>Categoría :</b></label>

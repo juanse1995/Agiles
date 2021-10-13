@@ -49,12 +49,12 @@ namespace Persistencia
 
         IEnumerable<Directivo> I_RepositorioDirectivo.GetAllDirectivo()
         {
-            return _appContext.Directivos.AsNoTracking().Include(e => e.EmpleadoRef);
+            return _appContext.Directivos.AsNoTracking().Include(e => e.EmpleadoRef).Include(P => P.EmpleadoRef.PersonaRef);
         }
 
         Directivo I_RepositorioDirectivo.GetDirectivo(int IdDirectivo)
         {
-            return _appContext.Directivos.Include(e => e.EmpleadoRef).Where(d => d.Id == IdDirectivo).FirstOrDefault();
+            return _appContext.Directivos.Include(e => e.EmpleadoRef).Include(P => P.EmpleadoRef.PersonaRef).Include(P => P.EmpleadoRef.EmpresaRef).Where(d => d.Id == IdDirectivo).FirstOrDefault();
         }
 
         /*Directivo I_RepositorioDirectivo.Subordinado(int IdDirectivo, int IdEmpleado)
