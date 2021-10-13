@@ -4,7 +4,7 @@
 }
 
 <div class="text-center center">
-    <h1>Listado de directivos</h1>
+    <h1>Listado de directivos</h1> 
 </div>
 
 <br/>
@@ -18,15 +18,31 @@
 <br>
 <table class="table">
     <tr>
-        <th>CATEGORIA</th>
+        <th>CARGO</th>        
+        <th>CATEGORÍA</th>
+        <th>DETALLE</th>
+        <th>EDITAR</th>
+        <th>ELIMINAR</th>
     </tr>
-
-
-<table class="table">
    @foreach (var directivo in Model.Directivos)
     {
        <tr>
-           <td>@directivo.Categoria</td>
+        <td>@directivo.EmpleadoRef.
+        <td>@directivo.EmpleadoRef.Cargo</td>
+        <td>@directivo.Categoria</td>
+
+        <td><a class="btn btn-info" asp-page="./Buscar" asp-route-IdCliente="@directivo.Id">
+            <i class="fas fa-info-circle"></i>
+            </a>
+        </td>
+        <td><a class="btn btn-warning" asp-page="./Actualizar" asp-route-IdCliente="@directivo.Id">
+            <i class="fas fa-edit"></i>
+            </a>
+        </td>
+        <td><a class="btn btn-danger" asp-page="./Eliminar" asp-route-IdCliente="@directivo.Id">
+            <i class="fas fa-minus-circle"></i>
+            </a>
+        </td>
        </tr> 
     }
 </table>

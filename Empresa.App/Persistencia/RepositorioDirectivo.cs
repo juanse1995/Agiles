@@ -49,7 +49,7 @@ namespace Persistencia
 
         IEnumerable<Directivo> I_RepositorioDirectivo.GetAllDirectivo()
         {
-            return _appContext.Directivos.AsNoTracking();
+            return _appContext.Directivos.AsNoTracking().Include(e => e.EmpleadoRef);
         }
 
         Directivo I_RepositorioDirectivo.GetDirectivo(int IdDirectivo)
