@@ -1,0 +1,27 @@
+﻿@page
+@model BuscarUnDirectivo.BuscarModel
+@{
+    ViewData["Title"] = "Detalles directivo";
+}
+<h1>Información del directivo</h1>
+<br>
+<br>
+    <div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label for="name"><b>Cargo :</b></label>
+                <input asp-for="Directivo_enc.EmpleadoRef.Cargo" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="last_name"><b>Categoría :</b></label>
+                <input asp-for="Directivo_enc.Categoria" class="form-control" readonly></input>
+            </div>            
+            <br>
+            <div class="form-group">
+                <input class="btn btn-success" type="button" onclick="window.location.replace('/Directivos/List')" value="Aceptar" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>

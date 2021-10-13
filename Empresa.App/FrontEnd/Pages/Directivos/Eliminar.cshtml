@@ -1,0 +1,28 @@
+﻿@page
+@model EliminarUnDirectivo.EliminarModel
+@{
+    ViewData["Title"] = "Eliminar directivo";
+}
+<h1>Eliminar directivo</h1>
+<br>
+<br>
+    <div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label for="name"><b>Cargo :</b></label>
+                <input asp-for="Directivo_enc.EmpleadoRef.Cargo" class="form-control" readonly></input>
+            </div>
+            <div class="form-group">
+                <label for="last_name"><b>Categoría :</b></label>
+                <input asp-for="Directivo_enc.Categoria" class="form-control" readonly></input>
+            </div>            
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Eliminar" class="btn btn-danger"/>
+                <input class="btn btn-secondary" type="button" onclick="window.location.replace('/Directivos/List')" value="Cancelar" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>

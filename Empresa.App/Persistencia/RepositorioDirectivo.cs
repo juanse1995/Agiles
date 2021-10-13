@@ -54,7 +54,7 @@ namespace Persistencia
 
         Directivo I_RepositorioDirectivo.GetDirectivo(int IdDirectivo)
         {
-            return _appContext.Directivos.FirstOrDefault(p => p.Id == IdDirectivo);
+            return _appContext.Directivos.Include(e => e.EmpleadoRef).Where(d => d.Id == IdDirectivo).FirstOrDefault();
         }
 
         /*Directivo I_RepositorioDirectivo.Subordinado(int IdDirectivo, int IdEmpleado)
