@@ -10,9 +10,9 @@
     <h1 class="display-4">Gestión Empresarial</h1>
     <!--<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>-->
 </div>
-@if(User.Identity.IsAuthenticated)
+<!--@if(User.Identity.IsAuthenticated)
 {
-     <table class="table table-sm">
+     <table class="table table-sm" type="hidden">
               @foreach (var claim in User.Claims)
               {
                 <tr>
@@ -21,7 +21,7 @@
                 </tr>
               }
     </table>
-}    
+}-->    
 
 <table class="table">
     <tr>
