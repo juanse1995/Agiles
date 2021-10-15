@@ -47,7 +47,6 @@ C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Persist
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Persistencia\obj\Debug\net5.0\Persistencia.AssemblyInfoInputs.cache
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Persistencia\obj\Debug\net5.0\Persistencia.AssemblyInfo.cs
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Persistencia\obj\Debug\net5.0\Persistencia.csproj.CoreCompileInputs.cache
-C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Persistencia\obj\Debug\net5.0\Persistencia.csproj.CopyComplete
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Persistencia\obj\Debug\net5.0\Persistencia.dll
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Persistencia\obj\Debug\net5.0\ref\Persistencia.dll
 C:\Users\Sumset\Videos\ProyectosMinTic\Agiles_Empresa\Agiles\Empresa.App\Persistencia\obj\Debug\net5.0\Persistencia.pdb

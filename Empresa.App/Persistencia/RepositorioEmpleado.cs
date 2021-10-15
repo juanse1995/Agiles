@@ -36,6 +36,10 @@ namespace Persistencia
         {
             return _appContext.Empleados.AsNoTracking().Include(p => p.PersonaRef).Include(e => e.EmpresaRef);
         }
+        IEnumerable<Empleado> I_RepositorioEmpleado.GetByEmpresa(int EmpresaId)
+        {
+            return _appContext.Empleados.AsNoTracking().Include(p => p.PersonaRef).Include(e => e.EmpresaRef).Where(emp => emp.EmpresaId == EmpresaId);
+        }
 
         Empleado I_RepositorioEmpleado.GetEmpleado(int IdEmpleado)
         {

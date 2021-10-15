@@ -1,3 +1,6 @@
+using System.Runtime.Serialization;
+using System.Net.Security;
+using System.Net.Mime;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,11 +43,13 @@ namespace Frontend
 
             //services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EmpresaWEB"));
             services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(@"Data Source=localhost\sqlexpress;Initial Catalog = AgilesEmpresa;Integrated Security = True"));
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -60,6 +65,7 @@ namespace Frontend
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
