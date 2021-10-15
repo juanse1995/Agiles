@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dominio;
 using Persistencia;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Frontend.ClientList
 {
+    [Authorize] 
     public class ListModelClientes : PageModel
     {
         private readonly I_RepositorioCliente _repo;

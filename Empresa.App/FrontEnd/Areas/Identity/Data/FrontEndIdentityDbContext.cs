@@ -10,7 +10,7 @@ namespace FrontEnd.Areas.Identity.Data
 {
     public class FrontEndIdentityDbContext : IdentityDbContext<IdentityUser>
     {
-        private const string connectionString = @"Data Source=localhost\sqlexpress;Initial Catalog = AgilesEmpresa;Integrated Security = True";
+        
         public FrontEndIdentityDbContext(DbContextOptions<FrontEndIdentityDbContext> options)
             : base(options)
         {            
