@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Dominio;
 using Persistencia;
+using Microsoft.AspNetCore.Authorization; 
 
 namespace ListarDirectivos
 {
+    [Authorize]
     public class ModelDirectivos : PageModel
     {
         private readonly I_RepositorioDirectivo _repo;
